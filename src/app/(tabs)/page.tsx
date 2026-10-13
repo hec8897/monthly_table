@@ -3,8 +3,8 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Icon } from "@/components/Icon";
-import { Sheet, Thumb } from "@/components/ui";
-import { INGREDIENTS, MONTHS } from "@/lib/data";
+import { HeartButton, pressable, Sheet, Thumb } from "@/components/ui";
+import { formatViews, getPopular, INGREDIENTS, MONTHS } from "@/lib/data";
 import { CURRENT_MONTH, useStore } from "@/lib/store";
 
 export default function HomePage() {
@@ -54,6 +54,8 @@ export default function HomePage() {
         })}
       </ul>
 
+      <PopularSection key={`popular-${month}`} month={month} />
+
       {pickerOpen && (
         <MonthSheet
           selected={month}
@@ -99,5 +101,37 @@ function MonthSheet({ selected, onSelect, onClose }: { selected: number; onSelec
         </div>
       </div>
     </Sheet>
+  );
+}
+
+function PopularSection({ month }: { month: number }) {
+  const openPlayer = useStore((s) => s.openPlayer);
+  const popular = getPopular(month);
+  if (popular.length === 0) return null;
+
+  return (
+    <section className="mt-8 mb-6 animate-fade">
+      <div className="mb-2 flex items-baseline gap-2">
+        <h2 className="text-heading2 text-label">{month}월 인기 레시피</h2>
+        <span className="text-caption1 font-medium text-label-alt">조회수 기준</span>
+      </div>
+      <ol>
+        {popular.map((v, i) => (
+          <li key={v.id}>
+            <div {...pressable(() => openPlayer(v))} className="-mx-2 flex cursor-pointer items-center gap-3 rounded-xl px-2 py-1.5 active:bg-fill">
+              <span className={`w-5 shrink-0 text-center text-headline2 ${i < 3 ? "text-primary" : "text-label-alt"}`}>{i + 1}</span>
+              <Thumb ingredientId={v.ingredientId} src={v.thumbnailUrl} className="size-16 shrink-0 rounded-xl" />
+              <div className="flex min-w-0 flex-1 flex-col gap-1">
+                <p className="line-clamp-2 text-label1 font-semibold text-label">{v.title}</p>
+                <p className="truncate text-caption1 font-medium text-label-alt">
+                  {INGREDIENTS[v.ingredientId]?.name} · {v.type === "shorts" ? "쇼츠" : "롱폼"} · 조회수 {formatViews(v.views!)}
+                </p>
+              </div>
+              <HeartButton video={v} />
+            </div>
+          </li>
+        ))}
+      </ol>
+    </section>
   );
 }

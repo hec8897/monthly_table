@@ -8,6 +8,7 @@ export const VideoSchema = z.object({
   title: z.string(),
   channel: z.string(),
   duration: z.string().optional(),
+  views: z.number().optional(), // snapshot at collection time
   thumbnailUrl: z.string().nullable(),
   ingredientId: z.string(),
 });
@@ -127,8 +128,8 @@ const LONGS: [(n: string) => string, string][] = [
 const CuratedSchema = z.record(
   z.string(),
   z.object({
-    shorts: z.array(z.object({ youtubeId: z.string().length(11), title: z.string(), channel: z.string() })),
-    longs: z.array(z.object({ youtubeId: z.string().length(11), title: z.string(), channel: z.string(), duration: z.string() })),
+    shorts: z.array(z.object({ youtubeId: z.string().length(11), title: z.string(), channel: z.string(), views: z.number() })),
+    longs: z.array(z.object({ youtubeId: z.string().length(11), title: z.string(), channel: z.string(), duration: z.string(), views: z.number() })),
   }),
 );
 const CURATED = CuratedSchema.parse(curatedJson);
@@ -164,6 +165,25 @@ export function getVideos(ingredientId: string): { shorts: Video[]; longs: Video
       duration,
     })),
   };
+}
+
+/** Most-viewed videos across the month's ingredients. Empty when the month has no view data (mock-only). */
+export function getPopular(month: number, limit = 10): Video[] {
+  return (MONTHS[month] ?? [])
+    .flatMap((id) => {
+      const { shorts, longs } = getVideos(id);
+      return [...shorts, ...longs];
+    })
+    .filter((v) => v.views != null)
+    .sort((a, b) => b.views! - a.views!)
+    .slice(0, limit);
+}
+
+export function formatViews(n: number) {
+  if (n >= 1e8) return `${+(n / 1e8).toFixed(1)}억회`;
+  if (n >= 1e5) return `${Math.round(n / 1e4)}만회`;
+  if (n >= 1e4) return `${+(n / 1e4).toFixed(1)}만회`;
+  return `${n.toLocaleString("ko-KR")}회`;
 }
 
 export function youtubeUrl(v: Video) {
