@@ -7,3 +7,4 @@ pnpm install
 pnpm dev   # http://localhost:3000 (모바일 뷰포트 390×844 권장)
 ```
 # monthly_table
+# monthly_table
