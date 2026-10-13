@@ -141,7 +141,7 @@ function Toast() {
         role="status"
         className="pointer-events-auto flex h-13 animate-fade items-center justify-between rounded-xl bg-inverse-bg pr-2 pl-4 shadow-[0_4px_12px_rgba(0,0,0,.12)]"
       >
-        <span className="text-label1 font-medium text-white">저장이 해제됐어요</span>
+        <span className="text-label1 font-medium text-inverse-label">저장이 해제됐어요</span>
         <button type="button" onClick={undo} className="h-11 px-2 text-label1 font-semibold text-inverse-primary">
           실행 취소
         </button>

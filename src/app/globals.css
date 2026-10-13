@@ -20,6 +20,7 @@
   --color-negative: #ff4242;
   --color-inverse-bg: rgb(23 23 25 / 0.9);
   --color-inverse-primary: #7cb0ff;
+  --color-inverse-label: #ffffff;
   --color-dimmer: rgb(0 0 0 / 0.52);
 
   --text-title3: 24px;
@@ -64,6 +65,31 @@
   }
   @keyframes pop {
     50% { transform: scale(1.2); }
+  }
+}
+
+/* Dark theme: follows the OS. Approximations of Wanted dark tokens — official values take precedence */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --color-primary: #3385ff;
+    --color-primary-strong: #1a75ff;
+    --color-primary-heavy: #0066ff;
+    --color-primary-bg: rgb(0 102 255 / 0.18);
+    --color-background: #1b1c1e;
+    --color-fill: rgb(112 115 124 / 0.22);
+    --color-fill-alt: rgb(112 115 124 / 0.1);
+    --color-label: #f7f7f8;
+    --color-label-neutral: rgb(194 196 200 / 0.88);
+    --color-label-alt: rgb(174 176 182 / 0.61);
+    --color-label-assistive: rgb(174 176 182 / 0.28);
+    --color-line: rgb(112 115 124 / 0.32);
+    --color-line-alt: rgb(112 115 124 / 0.22);
+    --color-negative: #ff6363;
+    --color-inverse-bg: rgb(247 247 248 / 0.92);
+    --color-inverse-primary: #0066ff;
+    --color-inverse-label: #171719;
+    --color-dimmer: rgb(0 0 0 / 0.7);
   }
 }
 
