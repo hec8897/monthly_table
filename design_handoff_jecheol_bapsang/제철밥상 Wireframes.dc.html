@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics><meta name="design_doc_mode" content="canvas"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&display=swap"><style>body{margin:0;background:#f0eee9;font-family:Pretendard,system-ui,sans-serif}a{color:#0066FF}a:hover{color:#0054D1}.dv-turn{padding:40px 44px 32px;border-bottom:1px solid rgba(0,0,0,.08);scroll-margin-top:16px}.dv-thd{display:flex;align-items:baseline;gap:10px;margin:0 0 20px}.dv-tid{font:600 10px ui-monospace,Menlo,monospace;padding:3px 7px;background:#1a1a1a;color:#fff;border-radius:4px;text-decoration:none}.dv-tname{font:600 13px/1.2 system-ui,sans-serif;color:#1a1a1a}.dv-opts{display:flex;flex-wrap:wrap;gap:28px;align-items:flex-start}.dv-opt{flex:none;display:flex;flex-direction:column;gap:9px;scroll-margin-top:16px}.dv-oid{font:600 10.5px ui-monospace,Menlo,monospace;padding:3px 7px;background:rgba(0,0,0,.08);color:#1a1a1a;border-radius:5px;text-decoration:none}.dv-olabel{display:flex;align-items:baseline;gap:8px;font:400 11px/1.3 system-ui,sans-serif;color:rgba(0,0,0,.55)}.dv-card{max-width:100%;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.06);overflow:hidden}.dv-opt:target .dv-oid{background:#2a78d6;color:#fff}.dv-next{margin:22px 0 0;font:12px/1.5 system-ui,sans-serif;color:rgba(0,0,0,.5)}</style></helmet>
+<section class="dv-turn" id="t2">
+<div class="dv-thd"><a class="dv-tid" href="#t2">2</a><span class="dv-tname">③ 대안(<a class="dv-oid" href="#1l">1l</a> <a class="dv-oid" href="#1m">1m</a>) + <a class="dv-oid" href="#1d">1d</a> <a class="dv-oid" href="#1e">1e</a> <a class="dv-oid" href="#1f">1f</a> 조합 플로우</span></div>
+<div style="font:700 22px/1.2 Gaegu,cursive;color:#3a3a3a;margin:0 0 14px">홈 → 상세 → 롱폼 시트 / 쇼츠 풀스크린 · 저장함 — 2탭 만에 재생</div>
+<div class="dv-opts">
+
+<div class="dv-opt" id="2a"><div class="dv-olabel"><a class="dv-oid" href="#2a">2a</a>홈 — 1열 리스트 (<a class="dv-oid" href="#1l">1l</a>)</div>
+<div class="dv-card" style="width:390px"><div style="position:relative;width:390px;height:844px;background:#fff;overflow:hidden;color:#171719">
+<div style="height:47px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;font:600 15px Pretendard"><span>9:41</span><span style="width:24px;height:11px;border:1.5px solid #171719;border-radius:3px"></span></div>
+<div style="position:absolute;top:47px;left:0;right:0;bottom:84px;overflow:hidden;padding:16px 20px 0;display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;flex-direction:column;gap:4px"><div style="font:600 14px/20px Pretendard;color:#0066FF">10월의 제철 ▾</div><div style="font:700 24px/32px Pretendard;letter-spacing:-.6px">지금 가장 맛있는 재료</div></div>
+<div style="display:flex;flex-direction:column">
+<sc-for list="{{ ingredients }}" as="it" hint-placeholder-count="8">
+<div style="display:flex;gap:14px;align-items:center;padding:6px 0"><div style="width:64px;height:64px;flex:none;border-radius:12px;background:repeating-linear-gradient(135deg,#F4F4F5 0 10px,#EBECEE 10px 11px)"></div><div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:2px"><div style="font:600 17px/24px Pretendard">{{ it.name }}</div><div style="font:500 14px/20px Pretendard;color:rgba(55,56,60,.61);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ it.desc }}</div></div><span style="font:400 22px/1 Pretendard;color:rgba(55,56,60,.28)">›</span></div>
+</sc-for>
+</div></div>
+<div style="position:absolute;left:0;right:0;bottom:0;height:84px;border-top:1px solid rgba(112,115,124,.16);background:#fff;display:flex;padding-top:8px">
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;color:#0066FF"><span style="width:22px;height:22px;border:2px solid #0066FF;border-radius:6px;background:#EAF2FE"></span><span style="font:600 11px/14px Pretendard">홈</span></div>
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;color:rgba(55,56,60,.61)"><span style="width:22px;height:22px;border:2px solid rgba(55,56,60,.4);border-radius:6px"></span><span style="font:500 11px/14px Pretendard">저장함</span></div>
+<span style="position:absolute;left:128px;bottom:8px;width:134px;height:5px;border-radius:3px;background:#171719"></span></div>
+</div></div>
+<sc-if value="{{ showNotes }}" hint-placeholder-val="{{ true }}"><div style="width:390px;font:17px/1.35 Gaegu,cursive;color:#555">• 탭 1: 8개 재료 중 선택 (스크롤 없음)<br>• "10월의 제철 ▾" 탭 → 월 선택 <a class="dv-oid" href="#2h">2h</a><br>• 오른쪽 슬라이드로 <a class="dv-oid" href="#2b">2b</a> 진입</div></sc-if>
+</div>
+
+<div class="dv-opt" id="2b"><div class="dv-olabel"><a class="dv-oid" href="#2b">2b</a>재료 상세 — 섹션형 (<a class="dv-oid" href="#1m">1m</a>)</div>
+<div class="dv-card" style="width:390px"><div style="position:relative;width:390px;height:844px;background:#fff;overflow:hidden;color:#171719">
+<div style="height:47px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;font:600 15px Pretendard"><span>9:41</span><span style="width:24px;height:11px;border:1.5px solid #171719;border-radius:3px"></span></div>
+<div style="height:52px;display:grid;grid-template-columns:52px 1fr 52px;align-items:center;padding:0 4px"><span style="width:44px;height:44px;display:flex;align-items:center;justify-content:center;font:400 32px/1 Pretendard">‹</span><span style="text-align:center;font:600 17px/24px Pretendard">전어</span><span></span></div>
+<div style="position:absolute;top:99px;left:0;right:0;bottom:0;overflow:hidden;padding:4px 0 0;display:flex;flex-direction:column;gap:24px">
+<div style="padding:0 20px;display:flex;gap:16px;align-items:center"><div style="width:96px;height:96px;flex:none;border-radius:12px;background:repeating-linear-gradient(135deg,#F4F4F5 0 10px,#EBECEE 10px 11px)"></div><div style="display:flex;flex-direction:column;gap:6px;align-items:flex-start"><div style="font:700 24px/32px Pretendard;letter-spacing:-.6px">전어</div><div style="font:400 14px/20px Pretendard;color:rgba(55,56,60,.61)">고소한 기름이 오르는 가을 생선</div><span style="padding:4px 8px;border-radius:8px;background:#EAF2FE;color:#0066FF;font:600 12px/16px Pretendard">9월 ~ 11월 제철</span></div></div>
+<div style="display:flex;flex-direction:column;gap:12px"><div style="padding:0 20px;display:flex;justify-content:space-between;align-items:baseline"><span style="font:600 20px/28px Pretendard;letter-spacing:-.3px">쇼츠</span><span style="font:500 14px/20px Pretendard;color:rgba(55,56,60,.61)">전체보기</span></div>
+<div style="display:flex;gap:12px;padding:0 20px"><sc-for list="{{ shorts }}" as="v" hint-placeholder-count="4"><div style="position:relative;width:132px;flex:none;aspect-ratio:9/16;border-radius:12px;overflow:hidden;background:repeating-linear-gradient(135deg,#F4F4F5 0 10px,#EBECEE 10px 11px)"><span style="position:absolute;top:0;right:0;width:44px;height:44px;display:flex;align-items:center;justify-content:center;color:#fff;font:400 20px/1 Pretendard;text-shadow:0 0 4px rgba(0,0,0,.4)">♡</span><div style="position:absolute;left:0;right:0;bottom:0;padding:30px 10px 10px;background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.6));color:#fff;font:600 13px/18px Pretendard;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">{{ v.title }}</div></div></sc-for></div></div>
+<div style="display:flex;flex-direction:column;gap:12px;padding:0 20px"><div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font:600 20px/28px Pretendard;letter-spacing:-.3px">롱폼</span><span style="font:500 14px/20px Pretendard;color:rgba(55,56,60,.61)">전체보기</span></div>
+<sc-for list="{{ longs }}" as="v" hint-placeholder-count="3"><div style="display:flex;gap:12px;align-items:flex-start"><div style="position:relative;width:144px;flex:none;aspect-ratio:16/9;border-radius:10px;background:repeating-linear-gradient(135deg,#F4F4F5 0 10px,#EBECEE 10px 11px)"><span style="position:absolute;right:6px;bottom:6px;padding:1px 5px;border-radius:4px;background:rgba(0,0,0,.6);color:#fff;font:500 11px/14px Pretendard">{{ v.dur }}</span></div><div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:4px"><div style="font:600 15px/21px Pretendard;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">{{ v.title }}</div><div style="font:500 12px/16px Pretendard;color:rgba(55,56,60,.61)">{{ v.ch }}</div></div><span style="width:44px;height:44px;flex:none;display:flex;align-items:center;justify-content:center;margin:-10px -10px 0 0;font:400 20px/1 Pretendard;color:rgba(55,56,60,.4)">♡</span></div></sc-for>
+</div></div>
+</div></div>
+<sc-if value="{{ showNotes }}" hint-placeholder-val="{{ true }}"><div style="width:390px;font:17px/1.35 Gaegu,cursive;color:#555">• 탭 2: 쇼츠 → <a class="dv-oid" href="#2d">2d</a> / 롱폼 → <a class="dv-oid" href="#2c">2c</a><br>• 썸네일 하트(44×44)로 바로 저장 → <a class="dv-oid" href="#2e">2e</a><br>• 전체보기 → 쇼츠 <a class="dv-oid" href="#2f">2f</a> / 롱폼 <a class="dv-oid" href="#2g">2g</a></div></sc-if>
+</div>
+
+<div class="dv-opt" id="2c"><div class="dv-olabel"><a class="dv-oid" href="#2c">2c</a>롱폼 재생 — 바텀 시트 (<a class="dv-oid" href="#1d">1d</a>)</div>
+<div class="dv-card" style="width:390px"><div style="position:relative;width:390px;height:844px;background:#fff;overflow:hidden;color:#171719">
+<div style="position:absolute;inset:0;background:repeating-linear-gradient(135deg,#F4F4F5 0 10px,#EBECEE 10px 11px)"></div>
+<div style="position:absolute;inset:0;background:rgba(23,23,25,.52)"></div>
+<div style="position:absolute;left:0;right:0;top:56px;bottom:0;background:#fff;border-radius:16px 16px 0 0;display:flex;flex-direction:column">
+<div style="height:28px;display:flex;align-items:center;justify-content:center"><span style="width:36px;height:5px;border-radius:3px;background:rgba(112,115,124,.3)"></span></div>
+<div style="aspect-ratio:16/9;background:#171719;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px"><span style="width:56px;height:40px;border-radius:10px;border:2px solid rgba(255,255,255,.5)"></span><span style="font:500 11px ui-monospace,Menlo,monospace;color:rgba(255,255,255,.6)">YouTube 임베드 플레이어</span></div>
+<div style="padding:20px;display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;flex-direction:column;gap:6px"><div style="font:600 18px/26px Pretendard;letter-spacing:-.2px">가을 전어구이, 집에서 냄새 없이 굽는 법 (뼈째 바삭하게)</div><div style="font:500 12px/16px Pretendard;color:rgba(55,56,60,.61);letter-spacing:.2px">자취요리 연구소</div></div>
+<div style="display:flex;gap:8px;align-items:center">
+<div style="height:40px;padding:0 14px;border-radius:10px;border:1px solid rgba(112,115,124,.22);display:flex;align-items:center;gap:6px;font:600 14px/20px Pretendard"><span style="color:#FF4242;font-size:18px">♥</span>저장됨</div>
+<div style="height:40px;padding:0 10px;display:flex;align-items:center;font:600 14px/20px Pretendard;color:#0066FF">YouTube에서 열기 ↗</div>
+</div></div>
+<span style="position:absolute;left:128px;bottom:8px;width:134px;height:5px;border-radius:3px;background:#171719"></span>
+</div>
+</div></div>
+<sc-if value="{{ showNotes }}" hint-placeholder-val="{{ true }}"><div style="width:390px;font:17px/1.35 Gaegu,cursive;color:#555">• <a class="dv-oid" href="#2b">2b</a> 위로 올라오는 시트 — 닫으면 상세 그대로<br>• 저장 / YouTube에서 열기</div></sc-if>
+</div>
+
+<div class="dv-opt" id="2d"><div class="dv-olabel"><a class="dv-oid" href="#2d">2d</a>쇼츠 재생 — 풀스크린 (<a class="dv-oid" href="#1e">1e</a>)</div>
+<div class="dv-card" style="width:390px"><div style="position:relative;width:390px;height:844px;background:#000;overflow:hidden;color:#fff">
+<div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:repeating-linear-gradient(135deg,#1e1e20 0 10px,#2a2a2d 10px 11px)"><span style="font:500 11px ui-monospace,Menlo,monospace;color:rgba(255,255,255,.55)">YouTube 쇼츠 임베드 · 9:16</span></div>
+<div style="position:absolute;top:0;left:0;right:0;height:47px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;font:600 15px Pretendard"><span>9:41</span><span style="width:24px;height:11px;border:1.5px solid #fff;border-radius:3px"></span></div>
+<span style="position:absolute;top:51px;left:8px;width:44px;height:44px;display:flex;align-items:center;justify-content:center;font:400 22px/1 Pretendard">✕</span>
+<div style="position:absolute;left:0;right:0;bottom:0;padding:80px 20px 42px;background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.7));display:flex;gap:12px;align-items:flex-end">
+<div style="flex:1;display:flex;flex-direction:column;gap:6px"><div style="font:600 16px/24px Pretendard;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">전어 회무침 1분 컷! 새콤달콤 초장 황금비율</div><div style="font:500 12px/16px Pretendard;opacity:.8;letter-spacing:.2px">한끼뚝딱</div></div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:2px"><span style="width:44px;height:44px;border-radius:22px;background:rgba(255,255,255,.16);display:flex;align-items:center;justify-content:center;font:400 22px/1 Pretendard">♡</span><span style="font:500 12px/16px Pretendard">저장</span></div>
+</div>
+<span style="position:absolute;left:128px;bottom:8px;width:134px;height:5px;border-radius:3px;background:#fff"></span>
+</div></div>
+<sc-if value="{{ showNotes }}" hint-placeholder-val="{{ true }}"><div style="width:390px;font:17px/1.35 Gaegu,cursive;color:#555">• 아래로 스와이프 / ✕ → <a class="dv-oid" href="#2b">2b</a> 복귀<br>• 위로 스와이프 → 같은 재료 다음 쇼츠</div></sc-if>
+</div>
+
+<div class="dv-opt" id="2e"><div class="dv-olabel"><a class="dv-oid" href="#2e">2e</a>저장함 (<a class="dv-oid" href="#1f">1f</a>)</div>
+<div class="dv-card" style="width:390px"><div style="position:relative;width:390px;height:844px;background:#fff;overflow:hidden;color:#171719">
+<div style="height:47px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;font:600 15px Pretendard"><span>9:41</span><span style="width:24px;height:11px;border:1.5px solid #171719;border-radius:3px"></span></div>
+<div style="position:absolute;top:47px;left:0;right:0;bottom:84px;overflow:hidden;padding:16px 20px 0;display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;align-items:baseline;gap:8px"><div style="font:700 24px/32px Pretendard;letter-spacing:-.6px">저장한 레시피</div><div style="font:500 12px/16px Pretendard;color:rgba(55,56,60,.61)">4개</div></div>
+<div style="display:flex;gap:8px"><span style="height:36px;padding:0 14px;border-radius:18px;background:#0066FF;color:#fff;display:flex;align-items:center;font:600 14px/20px Pretendard">전체</span><span style="height:36px;padding:0 14px;border-radius:18px;border:1px solid rgba(112,115,124,.22);display:flex;align-items:center;font:500 14px/20px Pretendard;color:rgba(46,47,51,.88)">쇼츠</span><span style="height:36px;padding:0 14px;border-radius:18px;border:1px solid rgba(112,115,124,.22);display:flex;align-items:center;font:500 14px/20px Pretendard;color:rgba(46,47,51,.88)">롱폼</span></div>
+<div style="display:flex;flex-direction:column;gap:4px">
+<sc-for list="{{ saved }}" as="v" hint-placeholder-count="4">
+<div style="display:flex;gap:14px;padding:10px 0;align-items:flex-start">
+<div style="position:relative;width:96px;height:96px;flex:none;border-radius:12px;background:repeating-linear-gradient(135deg,#F4F4F5 0 10px,#EBECEE 10px 11px)"><span style="position:absolute;left:6px;bottom:6px;padding:2px 6px;border-radius:4px;background:rgba(0,0,0,.6);color:#fff;font:500 11px/14px Pretendard">{{ v.type }}</span></div>
+<div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:6px"><div style="font:600 16px/22px Pretendard;letter-spacing:-.1px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">{{ v.title }}</div><div style="display:flex;gap:6px;align-items:center"><span style="padding:2px 8px;border-radius:6px;background:#F4F4F5;font:500 12px/16px Pretendard;color:rgba(46,47,51,.88)">{{ v.tag }}</span><span style="font:500 12px/16px Pretendard;color:rgba(55,56,60,.61)">{{ v.ch }}</span></div></div>
+<span style="width:44px;height:44px;flex:none;display:flex;align-items:center;justify-content:center;margin:-6px -10px 0 -6px;font:400 22px/1 Pretendard;color:#FF4242">♥</span>
+</div>
+</sc-for>
+</div></div>
+<div style="position:absolute;left:0;right:0;bottom:0;height:84px;border-top:1px solid rgba(112,115,124,.16);background:#fff;display:flex;padding-top:8px">
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;color:rgba(55,56,60,.61)"><span style="width:22px;height:22px;border:2px solid rgba(55,56,60,.4);border-radius:6px"></span><span style="font:500 11px/14px Pretendard">홈</span></div>
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;color:#0066FF"><span style="width:22px;height:22px;border:2px solid #0066FF;border-radius:6px;background:#EAF2FE"></span><span style="font:600 11px/14px Pretendard">저장함</span></div>
+<span style="position:absolute;left:128px;bottom:8px;width:134px;height:5px;border-radius:3px;background:#171719"></span></div>
+</div></div>
+<sc-if value="{{ showNotes }}" hint-placeholder-val="{{ true }}"><div style="width:390px;font:17px/1.35 Gaegu,cursive;color:#555">• 탭바 "저장함"에서 진입<br>• 쇼츠 항목 → <a class="dv-oid" href="#2d">2d</a>, 롱폼 항목 → <a class="dv-oid" href="#2c">2c</a> 재생</div></sc-if>
+</div>
+
+<div class="dv-opt" id="2f"><div class="dv-olabel"><a class="dv-oid" href="#2f">2f</a>쇼츠 전체보기</div>
+<div class="dv-card" style="width:390px"><div style="position:relative;width:390px;height:844px;background:#fff;overflow:hidden;color:#171719">
+<div style="height:47px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;font:600 15px Pretendard"><span>9:41</span><span style="width:24px;height:11px;border:1.5px solid #171719;border-radius:3px"></span></div>
+<div style="height:52px;display:grid;grid-template-columns:52px 1fr 52px;align-items:center;padding:0 4px"><span style="width:44px;height:44px;display:flex;align-items:center;justify-content:center;font:400 32px/1 Pretendard">‹</span><span style="text-align:center;font:600 17px/24px Pretendard">전어 쇼츠</span><span></span></div>
+<div style="position:absolute;top:99px;left:0;right:0;bottom:0;overflow:hidden;padding:8px 20px 0;display:flex;flex-direction:column;gap:12px">
+<div style="font:500 12px/16px Pretendard;color:rgba(55,56,60,.61)">영상 6개</div>
+<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px">
+<sc-for list="{{ shortsAll }}" as="v" hint-placeholder-count="6">
+<div style="position:relative;aspect-ratio:9/16;border-radius:12px;overflow:hidden;background:repeating-linear-gradient(135deg,#F4F4F5 0 10px,#EBECEE 10px 11px)">
+<span style="position:absolute;top:0;right:0;width:44px;height:44px;display:flex;align-items:center;justify-content:center;color:#fff;font:400 22px/1 Pretendard;text-shadow:0 0 4px rgba(0,0,0,.4)">♡</span>
+<div style="position:absolute;left:0;right:0;bottom:0;padding:40px 12px 12px;background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.6))"><div style="color:#fff;font:600 14px/20px Pretendard;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">{{ v.title }}</div></div>
+</div>
+</sc-for>
+</div></div>
+</div></div>
+<sc-if value="{{ showNotes }}" hint-placeholder-val="{{ true }}"><div style="width:390px;font:17px/1.35 Gaegu,cursive;color:#555">• <a class="dv-oid" href="#2b">2b</a> 쇼츠 "전체보기"에서 진입 (오른쪽 슬라이드)<br>• 9:16 2열 그리드, 탭 → <a class="dv-oid" href="#2d">2d</a></div></sc-if>
+</div>
+
+<div class="dv-opt" id="2g"><div class="dv-olabel"><a class="dv-oid" href="#2g">2g</a>롱폼 전체보기</div>
+<div class="dv-card" style="width:390px"><div style="position:relative;width:390px;height:844px;background:#fff;overflow:hidden;color:#171719">
+<div style="height:47px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;font:600 15px Pretendard"><span>9:41</span><span style="width:24px;height:11px;border:1.5px solid #171719;border-radius:3px"></span></div>
+<div style="height:52px;display:grid;grid-template-columns:52px 1fr 52px;align-items:center;padding:0 4px"><span style="width:44px;height:44px;display:flex;align-items:center;justify-content:center;font:400 32px/1 Pretendard">‹</span><span style="text-align:center;font:600 17px/24px Pretendard">전어 롱폼</span><span></span></div>
+<div style="position:absolute;top:99px;left:0;right:0;bottom:0;overflow:hidden;padding:8px 20px 0;display:flex;flex-direction:column;gap:12px">
+<div style="font:500 12px/16px Pretendard;color:rgba(55,56,60,.61)">영상 5개</div>
+<div style="display:flex;flex-direction:column;gap:24px">
+<sc-for list="{{ longsAll }}" as="v" hint-placeholder-count="5">
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="position:relative;aspect-ratio:16/9;border-radius:12px;background:repeating-linear-gradient(135deg,#F4F4F5 0 10px,#EBECEE 10px 11px)"><span style="position:absolute;right:8px;bottom:8px;padding:2px 6px;border-radius:4px;background:rgba(0,0,0,.6);color:#fff;font:500 12px/16px Pretendard">{{ v.dur }}</span></div>
+<div style="display:flex;gap:4px;align-items:flex-start"><div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:4px"><div style="font:600 16px/24px Pretendard;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">{{ v.title }}</div><div style="font:500 12px/16px Pretendard;color:rgba(55,56,60,.61)">{{ v.ch }}</div></div><span style="width:44px;height:44px;flex:none;display:flex;align-items:center;justify-content:center;margin:-10px -10px 0 0;font:400 22px/1 Pretendard;color:rgba(55,56,60,.4)">♡</span></div>
+</div>
+</sc-for>
+</div></div>
+</div></div>
+<sc-if value="{{ showNotes }}" hint-placeholder-val="{{ true }}"><div style="width:390px;font:17px/1.35 Gaegu,cursive;color:#555">• <a class="dv-oid" href="#2b">2b</a> 롱폼 "전체보기"에서 진입<br>• 16:9 1열, 탭 → <a class="dv-oid" href="#2c">2c</a></div></sc-if>
+</div>
+
+<div class="dv-opt" id="2h"><div class="dv-olabel"><a class="dv-oid" href="#2h">2h</a>월 선택 — 바텀 시트</div>
+<div class="dv-card" style="width:390px"><div style="position:relative;width:390px;height:844px;background:#fff;overflow:hidden;color:#171719">
+<div style="height:47px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;font:600 15px Pretendard"><span>9:41</span><span style="width:24px;height:11px;border:1.5px solid #171719;border-radius:3px"></span></div>
+<div style="padding:16px 20px 0;display:flex;flex-direction:column;gap:4px"><div style="font:600 14px/20px Pretendard;color:#0066FF">10월의 제철 ▾</div><div style="font:700 24px/32px Pretendard;letter-spacing:-.6px">지금 가장 맛있는 재료</div></div>
+<div style="position:absolute;inset:0;background:rgba(23,23,25,.52)"></div>
+<div style="position:absolute;left:0;right:0;bottom:0;background:#fff;border-radius:16px 16px 0 0;padding:0 20px 42px;display:flex;flex-direction:column;gap:20px">
+<div style="height:24px;display:flex;align-items:center;justify-content:center"><span style="width:36px;height:5px;border-radius:3px;background:rgba(112,115,124,.3)"></span></div>
+<div style="display:flex;flex-direction:column;gap:4px"><div style="font:600 20px/28px Pretendard;letter-spacing:-.3px">어느 달의 제철을 볼까요?</div><div style="font:400 14px/20px Pretendard;color:rgba(55,56,60,.61)">달마다 제철 재료 8가지를 보여드려요</div></div>
+<div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px">
+<sc-for list="{{ monthsBefore }}" as="m" hint-placeholder-count="9"><div style="height:52px;border-radius:12px;background:#F7F7F8;display:flex;align-items:center;justify-content:center;font:500 15px/20px Pretendard;color:rgba(46,47,51,.88)">{{ m }}</div></sc-for>
+<div style="height:52px;border-radius:12px;background:#EAF2FE;box-shadow:inset 0 0 0 1.5px #0066FF;display:flex;flex-direction:column;align-items:center;justify-content:center;font:600 15px/20px Pretendard;color:#0066FF">10월<span style="font:500 10px/12px Pretendard">이번 달</span></div>
+<sc-for list="{{ monthsAfter }}" as="m" hint-placeholder-count="2"><div style="height:52px;border-radius:12px;background:#F7F7F8;display:flex;align-items:center;justify-content:center;font:500 15px/20px Pretendard;color:rgba(46,47,51,.88)">{{ m }}</div></sc-for>
+</div>
+<span style="position:absolute;left:128px;bottom:8px;width:134px;height:5px;border-radius:3px;background:#171719"></span>
+</div>
+</div></div>
+<sc-if value="{{ showNotes }}" hint-placeholder-val="{{ true }}"><div style="width:390px;font:17px/1.35 Gaegu,cursive;color:#555">• 홈 "10월의 제철 ▾" 라벨 탭 → 시트<br>• 월 탭 즉시 시트 닫힘 + 그리드 150ms 페이드 교체<br>• 다른 달 볼 땐 라벨 옆 "이번 달로" 텍스트 버튼 노출</div></sc-if>
+</div>
+</div>
+<p class="dv-next">다음 단계 예시: "이 플로우로 고해상도 시안 진행" · "<a class="dv-oid" href="#2h">2h</a> 월 선택을 가로 칩 방식으로도 비교" · "로딩·빈 상태도 이 구조로"</p>
+</section>
+<section class="dv-turn" id="t1">
+<div class="dv-thd"><a class="dv-tid" href="#t1">1</a><span class="dv-tname">제철밥상 와이어프레임 — 핵심 플로우 · 상태 · 대안</span></div>
+
+<div style="font:700 22px/1.2 Gaegu,cursive;color:#3a3a3a;margin:0 0 14px">① 핵심 플로우 — 홈 → 재료 상세 → 영상 재생 / 저장함</div>
+<div class="dv-opts">
+
+<div class="dv-opt" id="1a"><div class="dv-olabel"><a class="dv-oid" href="#1a">1a</a>홈</div>
+<div class="dv-card" style="width:390px"><div style="position:relative;width:390px;height:844px;background:#fff;overflow:hidden;color:#171719">
+<div style="height:47px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;font:600 15px Pretendard"><span>9:41</span><span style="width:24px;height:11px;border:1.5px solid #171719;border-radius:3px"></span></div>
+<div style="position:absolute;top:47px;left:0;right:0;bottom:84px;overflow:hidden;padding:16px 20px 0;display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:4px"><div style="font:600 14px/20px Pretendard;color:#0066FF;letter-spacing:.1px">10월의 제철</div><div style="font:700 24px/32px Pretendard;letter-spacing:-.6px">지금 가장 맛있는 재료</div></div>
+<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:12px;row-gap:24px">
+<sc-for list="{{ ingredients }}" as="it" hint-placeholder-count="8">
+<div style="display:flex;flex-direction:column;gap:10px;border-radius:12px;min-width:0">
+<div style="aspect-ratio:1;border-radius:12px;background:repeating-linear-gradient(135deg,#F4F4F5 0 10px,#EBECEE 10px 11px);display:flex;align-items:center;justify-content:center"><span style="font:500 11px ui-monospace,Menlo,monospace;color:rgba(55,56,60,.55)">재료 사진</span></div>
+<div style="display:flex;flex-direction:column;gap:2px;padding:0 2px"><div style="font:600 18px/26px Pretendard;letter-spacing:-.2px">{{ it.name }}</div><div style="font:500 14px/20px Pretendard;color:rgba(55,56,60,.61);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ it.desc }}</div></div>
+</div>
+</sc-for>
+</div></div>
+<div style="position:absolute;left:0;right:0;bottom:0;height:84px;border-top:1px solid rgba(112,115,124,.16);background:#fff;display:flex;padding-top:8px">
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;color:#0066FF"><span style="width:22px;height:22px;border:2px solid #0066FF;border-radius:6px;background:#EAF2FE"></span><span style="font:600 11px/14px Pretendard">홈</span></div>
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;color:rgba(55,56,60,.61)"><span style="width:22px;height:22px;border:2px solid rgba(55,56,60,.4);border-radius:6px"></span><span style="font:500 11px/14px Pretendard">저장함</span></div>
+<span style="position:absolute;left:128px;bottom:8px;width:134px;height:5px;border-radius:3px;background:#171719"></span></div>
+</div></div>
+<sc-if value="{{ showNotes }}" hint-placeholder-val="{{ true }}"><div style="width:390px;font:17px/1.35 Gaegu,cursive;color:#555">• "10월의 제철"은 현재 월 자동<br>• 2열 × 4행, 아래로 스크롤 (첫 화면에 2.5행 노출)<br>• 카드 외곽선 없음, 이미지 영역만 옅은 Fill / 눌림 = 배경 한 단계</div></sc-if>
+</div>
+
+<div class="dv-opt" id="1b"><div class="dv-olabel"><a class="dv-oid" href="#1b">1b</a>재료 상세 — 쇼츠 탭</div>
+<div class="dv-card" style="width:390px"><div style="position:relative;width:390px;height:844px;background:#fff;overflow:hidden;color:#171719">
+<div style="height:47px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;font:600 15px Pretendard"><span>9:41</span><span style="width:24px;height:11px;border:1.5px solid #171719;border-radius:3px"></span></div>
+<div style="height:52px;display:grid;grid-template-columns:52px 1fr 52px;align-items:center;padding:0 4px"><span style="width:44px;height:44px;display:flex;align-items:center;justify-content:center;font:400 32px/1 Pretendard">‹</span><span style="text-align:center;font:600 17px/24px Pretendard">전어</span><span></span></div>
+<div style="position:absolute;top:99px;left:0;right:0;bottom:0;overflow:hidden;padding:4px 20px 0;display:flex;flex-direction:column;gap:20px">
+<div style="height:200px;border-radius:12px;background:repeating-linear-gradient(135deg,#F4F4F5 0 10px,#EBECEE 10px 11px);display:flex;align-items:center;justify-content:center;flex:none"><span style="font:500 11px ui-monospace,Menlo,monospace;color:rgba(55,56,60,.55)">재료 히어로 이미지 · h200</span></div>
+<div style="display:flex;flex-direction:column;gap:8px;align-items:flex-start"><div style="font:700 24px/32px Pretendard;letter-spacing:-.6px">전어</div><div style="font:400 16px/24px Pretendard;color:rgba(55,56,60,.61)">고소한 기름이 오르는 가을 생선</div><span style="margin-top:4px;padding:6px 10px;border-radius:8px;background:#EAF2FE;color:#0066FF;font:600 13px/18px Pretendard">9월 ~ 11월 제철</span></div>
+<div style="display:flex;padding:3px;border-radius:10px;background:#F4F4F5;flex:none"><div style="flex:1;height:38px;border-radius:8px;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.08);display:flex;align-items:center;justify-content:center;font:600 14px/20px Pretendard;color:#0066FF">쇼츠</div><div style="flex:1;height:38px;display:flex;align-items:center;justify-content:center;font:500 14px/20px Pretendard;color:rgba(55,56,60,.61)">롱폼</div></div>
+<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px">
+<sc-for list="{{ shorts }}" as="v" hint-placeholder-count="4">
+<div style="position:relative;aspect-ratio:9/16;border-radius:12px;overflow:hidden;background:repeating-linear-gradient(135deg,#F4F4F5 0 10px,#EBECEE 10px 11px)">
+<span style="position:absolute;top:40%;left:0;right:0;text-align:center;font:500 11px ui-monospace,Menlo,monospace;color:rgba(55,56,60,.55)">9:16 썸네일</span>
+<span style="position:absolute;top:0;right:0;width:44px;height:44px;display:flex;align-items:center;justify-content:center;color:#fff;font:400 22px/1 Pretendard;text-shadow:0 0 4px rgba(0,0,0,.4)">♡</span>
+<div style="position:absolute;left:0;right:0;bottom:0;padding:40px 12px 12px;background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.6))"><div style="color:#fff;font:600 14px/20px Pretendard;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">{{ v.title }}</div></div>
+</div>
+</sc-for>
+</div></div>
+</div></div>
+<sc-if value="{{ showNotes }}" hint-placeholder-val="{{ true }}"><div style="width:390px;font:17px/1.35 Gaegu,cursive;color:#555">• 상세는 오른쪽 슬라이드 진입, 탭바 숨김<br>• 세그먼트 활성 = 흰 노브 + Primary 라벨<br>• 하트 터치영역 44×44, 썸네일 우상단</div></sc-if>
+</div>
+
+<div class="dv-opt" id="1c"><div class="dv-olabel"><a class="dv-oid" href="#1c">1c</a>재료 상세 — 롱폼 탭</div>
+<div class="dv-card" style="width:390px"><div style="position:relative;width:390px;height:844px;background:#fff;overflow:hidden;color:#171719">
+<div style="height:47px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;font:600 15px Pretendard"><span>9:41</span><span style="width:24px;height:11px;border:1.5px solid #171719;border-radius:3px"></span></div>
+<div style="height:52px;display:grid;grid-template-columns:52px 1fr 52px;align-items:center;padding:0 4px"><span style="width:44px;height:44px;display:flex;align-items:center;justify-content:center;font:400 32px/1 Pretendard">‹</span><span style="text-align:center;font:600 17px/24px Pretendard">전어</span><span></span></div>
+<div style="position:absolute;top:99px;left:0;right:0;bottom:0;overflow:hidden;padding:4px 20px 0;display:flex;flex-direction:column;gap:20px">
+<div style="height:200px;border-radius:12px;background:repeating-linear-gradient(135deg,#F4F4F5 0 10px,#EBECEE 10px 11px);display:flex;align-items:center;justify-content:center;flex:none"><span style="font:500 11px ui-monospace,Menlo,monospace;color:rgba(55,56,60,.55)">재료 히어로 이미지 · h200</span></div>
+<div style="display:flex;flex-direction:column;gap:8px;align-items:flex-start"><div style="font:700 24px/32px Pretendard;letter-spacing:-.6px">전어</div><div style="font:400 16px/24px Pretendard;color:rgba(55,56,60,.61)">고소한 기름이 오르는 가을 생선</div><span style="margin-top:4px;padding:6px 10px;border-radius:8px;background:#EAF2FE;color:#0066FF;font:600 13px/18px Pretendard">9월 ~ 11월 제철</span></div>
+<div style="display:flex;padding:3px;border-radius:10px;background:#F4F4F5;flex:none"><div style="flex:1;height:38px;display:flex;align-items:center;justify-content:center;font:500 14px/20px Pretendard;color:rgba(55,56,60,.61)">쇼츠</div><div style="flex:1;height:38px;border-radius:8px;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.08);display:flex;align-items:center;justify-content:center;font:600 14px/20px Pretendard;color:#0066FF">롱폼</div></div>
+<div style="display:flex;flex-direction:column;gap:24px">
+<sc-for list="{{ longs }}" as="v" hint-placeholder-count="3">
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="position:relative;aspect-ratio:16/9;border-radius:12px;background:repeating-linear-gradient(135deg,#F4F4F5 0 10px,#EBECEE 10px 11px);display:flex;align-items:center;justify-content:center"><span style="font:500 11px ui-monospace,Menlo,monospace;color:rgba(55,56,60,.55)">16:9 썸네일</span><span style="position:absolute;right:8px;bottom:8px;padding:2px 6px;border-radius:4px;background:rgba(0,0,0,.6);color:#fff;font:500 12px/16px Pretendard">{{ v.dur }}</span></div>
+<div style="display:flex;gap:4px;align-items:flex-start"><div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:4px"><div style="font:600 16px/24px Pretendard;letter-spacing:-.1px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">{{ v.title }}</div><div style="font:500 12px/16px Pretendard;color:rgba(55,56,60,.61);letter-spacing:.2px">{{ v.ch }}</div></div><span style="width:44px;height:44px;flex:none;display:flex;align-items:center;justify-content:center;margin:-10px -10px 0 0;font:400 22px/1 Pretendard;color:rgba(55,56,60,.4)">♡</span></div>
+</div>
+</sc-for>
+</div></div>
+</div></div>
+<sc-if value="{{ showNotes }}" hint-placeholder-val="{{ true }}"><div style="width:390px;font:17px/1.35 Gaegu,cursive;color:#555">• 16:9 1열, 길이 배지 우하단(Caption 1)<br>• 제목 최대 2줄 말줄임 + 채널명<br>• 탭 전환 시 리스트만 150ms 페이드</div></sc-if>
+</div>
+
+<div class="dv-opt" id="1d"><div class="dv-olabel"><a class="dv-oid" href="#1d">1d</a>영상 재생 — 롱폼 (바텀 시트)</div>
+<div class="dv-card" style="width:390px"><div style="position:relative;width:390px;height:844px;background:#fff;overflow:hidden;color:#171719">
+<div style="position:absolute;inset:0;background:repeating-linear-gradient(135deg,#F4F4F5 0 10px,#EBECEE 10px 11px)"></div>
+<div style="position:absolute;inset:0;background:rgba(23,23,25,.52)"></div>
+<div style="position:absolute;left:0;right:0;top:56px;bottom:0;background:#fff;border-radius:16px 16px 0 0;display:flex;flex-direction:column">
+<div style="height:28px;display:flex;align-items:center;justify-content:center"><span style="width:36px;height:5px;border-radius:3px;background:rgba(112,115,124,.3)"></span></div>
+<div style="aspect-ratio:16/9;background:#171719;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px"><span style="width:56px;height:40px;border-radius:10px;border:2px solid rgba(255,255,255,.5)"></span><span style="font:500 11px ui-monospace,Menlo,monospace;color:rgba(255,255,255,.6)">YouTube 임베드 플레이어</span></div>
+<div style="padding:20px;display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;flex-direction:column;gap:6px"><div style="font:600 18px/26px Pretendard;letter-spacing:-.2px">가을 전어구이, 집에서 냄새 없이 굽는 법 (뼈째 바삭하게)</div><div style="font:500 12px/16px Pretendard;color:rgba(55,56,60,.61);letter-spacing:.2px">자취요리 연구소</div></div>
+<div style="display:flex;gap:8px;align-items:center">
+<div style="height:40px;padding:0 14px;border-radius:10px;border:1px solid rgba(112,115,124,.22);display:flex;align-items:center;gap:6px;font:600 14px/20px Pretendard"><span style="color:#FF4242;font-size:18px">♥</span>저장됨</div>
+<div style="height:40px;padding:0 10px;display:flex;align-items:center;font:600 14px/20px Pretendard;color:#0066FF">YouTube에서 열기 ↗</div>
+</div></div>
+<span style="position:absolute;left:128px;bottom:8px;width:134px;height:5px;border-radius:3px;background:#171719"></span>
+</div>
+</div></div>
+<sc-if value="{{ showNotes }}" hint-placeholder-val="{{ true }}"><div style="width:390px;font:17px/1.35 Gaegu,cursive;color:#555">• 아래에서 올라오는 시트 (250ms ease-out)<br>• 상세 맥락 유지 → 닫으면 바로 다음 영상 고르기<br>• 그랩바 드래그 / 딤 탭으로 닫기</div></sc-if>
+</div>
+
+<div class="dv-opt" id="1e"><div class="dv-olabel"><a class="dv-oid" href="#1e">1e</a>영상 재생 — 쇼츠 (풀스크린)</div>
+<div class="dv-card" style="width:390px"><div style="position:relative;width:390px;height:844px;background:#000;overflow:hidden;color:#fff">
+<div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:repeating-linear-gradient(135deg,#1e1e20 0 10px,#2a2a2d 10px 11px)"><span style="font:500 11px ui-monospace,Menlo,monospace;color:rgba(255,255,255,.55)">YouTube 쇼츠 임베드 · 9:16</span></div>
+<div style="position:absolute;top:0;left:0;right:0;height:47px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;font:600 15px Pretendard"><span>9:41</span><span style="width:24px;height:11px;border:1.5px solid #fff;border-radius:3px"></span></div>
+<span style="position:absolute;top:51px;left:8px;width:44px;height:44px;display:flex;align-items:center;justify-content:center;font:400 22px/1 Pretendard">✕</span>
+<div style="position:absolute;left:0;right:0;bottom:0;padding:80px 20px 42px;background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.7));display:flex;gap:12px;align-items:flex-end">
+<div style="flex:1;display:flex;flex-direction:column;gap:6px"><div style="font:600 16px/24px Pretendard;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">전어 회무침 1분 컷! 새콤달콤 초장 황금비율</div><div style="font:500 12px/16px Pretendard;opacity:.8;letter-spacing:.2px">한끼뚝딱</div></div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:2px"><span style="width:44px;height:44px;border-radius:22px;background:rgba(255,255,255,.16);display:flex;align-items:center;justify-content:center;font:400 22px/1 Pretendard">♡</span><span style="font:500 12px/16px Pretendard">저장</span></div>
+</div>
+<span style="position:absolute;left:128px;bottom:8px;width:134px;height:5px;border-radius:3px;background:#fff"></span>
+</div></div>
+<sc-if value="{{ showNotes }}" hint-placeholder-val="{{ true }}"><div style="width:390px;font:17px/1.35 Gaegu,cursive;color:#555">• 쇼츠는 풀스크린 시트가 자연스러움 (세로 영상 몰입)<br>• 아래로 스와이프 / ✕ 로 닫기<br>• 하트만 저장 시 스케일 바운스 예외 허용</div></sc-if>
+</div>
+
+<div class="dv-opt" id="1f"><div class="dv-olabel"><a class="dv-oid" href="#1f">1f</a>저장함</div>
+<div class="dv-card" style="width:390px"><div style="position:relative;width:390px;height:844px;background:#fff;overflow:hidden;color:#171719">
+<div style="height:47px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;font:600 15px Pretendard"><span>9:41</span><span style="width:24px;height:11px;border:1.5px solid #171719;border-radius:3px"></span></div>
+<div style="position:absolute;top:47px;left:0;right:0;bottom:84px;overflow:hidden;padding:16px 20px 0;display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;align-items:baseline;gap:8px"><div style="font:700 24px/32px Pretendard;letter-spacing:-.6px">저장한 레시피</div><div style="font:500 12px/16px Pretendard;color:rgba(55,56,60,.61)">4개</div></div>
+<div style="display:flex;gap:8px"><span style="height:36px;padding:0 14px;border-radius:18px;background:#0066FF;color:#fff;display:flex;align-items:center;font:600 14px/20px Pretendard">전체</span><span style="height:36px;padding:0 14px;border-radius:18px;border:1px solid rgba(112,115,124,.22);display:flex;align-items:center;font:500 14px/20px Pretendard;color:rgba(46,47,51,.88)">쇼츠</span><span style="height:36px;padding:0 14px;border-radius:18px;border:1px solid rgba(112,115,124,.22);display:flex;align-items:center;font:500 14px/20px Pretendard;color:rgba(46,47,51,.88)">롱폼</span></div>
+<div style="display:flex;flex-direction:column;gap:4px">
+<sc-for list="{{ saved }}" as="v" hint-placeholder-count="4">
+<div style="display:flex;gap:14px;padding:10px 0;align-items:flex-start">
+<div style="position:relative;width:96px;height:96px;flex:none;border-radius:12px;background:repeating-linear-gradient(135deg,#F4F4F5 0 10px,#EBECEE 10px 11px)"><span style="position:absolute;left:6px;bottom:6px;padding:2px 6px;border-radius:4px;background:rgba(0,0,0,.6);color:#fff;font:500 11px/14px Pretendard">{{ v.type }}</span></div>
+<div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:6px"><div style="font:600 16px/22px Pretendard;letter-spacing:-.1px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">{{ v.title }}</div><div style="display:flex;gap:6px;align-items:center"><span style="padding:2px 8px;border-radius:6px;background:#F4F4F5;font:500 12px/16px Pretendard;color:rgba(46,47,51,.88)">{{ v.tag }}</span><span style="font:500 12px/16px Pretendard;color:rgba(55,56,60,.61)">{{ v.ch }}</span></div></div>
+<span style="width:44px;height:44px;flex:none;display:flex;align-items:center;justify-content:center;margin:-6px -10px 0 -6px;font:400 22px/1 Pretendard;color:#FF4242">♥</span>
+</div>
+</sc-for>
+</div></div>
+<div style="position:absolute;left:0;right:0;bottom:0;height:84px;border-top:1px solid rgba(112,115,124,.16);background:#fff;display:flex;padding-top:8px">
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;color:rgba(55,56,60,.61)"><span style="width:22px;height:22px;border:2px solid rgba(55,56,60,.4);border-radius:6px"></span><span style="font:500 11px/14px Pretendard">홈</span></div>
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;color:#0066FF"><span style="width:22px;height:22px;border:2px solid #0066FF;border-radius:6px;background:#EAF2FE"></span><span style="font:600 11px/14px Pretendard">저장함</span></div>
+<span style="position:absolute;left:128px;bottom:8px;width:134px;height:5px;border-radius:3px;background:#171719"></span></div>
+</div></div>
+<sc-if value="{{ showNotes }}" hint-placeholder-val="{{ true }}"><div style="width:390px;font:17px/1.35 Gaegu,cursive;color:#555">• 필터 칩 단일 선택, 선택 = Primary 배경<br>• 썸네일 정사각 크롭 + 쇼츠/롱폼 배지로 혼합 리스트 정렬<br>• 최근 저장순</div></sc-if>
+</div>
+
+<div class="dv-opt" id="1g"><div class="dv-olabel"><a class="dv-oid" href="#1g">1g</a>저장함 — 빈 상태</div>
+<div class="dv-card" style="width:390px"><div style="position:relative;width:390px;height:844px;background:#fff;overflow:hidden;color:#171719">
+<div style="height:47px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;font:600 15px Pretendard"><span>9:41</span><span style="width:24px;height:11px;border:1.5px solid #171719;border-radius:3px"></span></div>
+<div style="padding:16px 20px 0"><div style="font:700 24px/32px Pretendard;letter-spacing:-.6px">저장한 레시피</div></div>
+<div style="position:absolute;top:140px;left:20px;right:20px;bottom:84px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;text-align:center">
+<div style="width:120px;height:120px;border-radius:60px;background:repeating-linear-gradient(135deg,#F4F4F5 0 10px,#EBECEE 10px 11px);display:flex;align-items:center;justify-content:center"><span style="font:500 11px ui-monospace,Menlo,monospace;color:rgba(55,56,60,.55)">일러스트</span></div>
+<div style="display:flex;flex-direction:column;gap:6px"><div style="font:600 18px/26px Pretendard">아직 저장한 레시피가 없어요</div><div style="font:400 14px/20px Pretendard;color:rgba(55,56,60,.61)">마음에 드는 영상에 하트를 눌러 모아보세요</div></div>
+<div style="height:48px;padding:0 24px;border-radius:12px;background:#0066FF;color:#fff;display:flex;align-items:center;font:600 16px/24px Pretendard">제철 재료 보러 가기</div>
+</div>
+<div style="position:absolute;left:0;right:0;bottom:0;height:84px;border-top:1px solid rgba(112,115,124,.16);background:#fff;display:flex;padding-top:8px">
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;color:rgba(55,56,60,.61)"><span style="width:22px;height:22px;border:2px solid rgba(55,56,60,.4);border-radius:6px"></span><span style="font:500 11px/14px Pretendard">홈</span></div>
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;color:#0066FF"><span style="width:22px;height:22px;border:2px solid #0066FF;border-radius:6px;background:#EAF2FE"></span><span style="font:600 11px/14px Pretendard">저장함</span></div>
+<span style="position:absolute;left:128px;bottom:8px;width:134px;height:5px;border-radius:3px;background:#171719"></span></div>
+</div></div>
+<sc-if value="{{ showNotes }}" hint-placeholder-val="{{ true }}"><div style="width:390px;font:17px/1.35 Gaegu,cursive;color:#555">• 필터 칩은 빈 상태에서 숨김<br>• Primary 버튼 → 홈 탭으로 이동</div></sc-if>
+</div>
+</div>
+
+<div style="font:700 22px/1.2 Gaegu,cursive;color:#3a3a3a;margin:44px 0 14px">② 상태 — 로딩 · 에러 · 빈 상태 · 토스트</div>
+<div class="dv-opts">
+
+<div class="dv-opt" id="1h"><div class="dv-olabel"><a class="dv-oid" href="#1h">1h</a>홈 — 로딩 (스켈레톤)</div>
+<div class="dv-card" style="width:390px"><div style="position:relative;width:390px;height:844px;background:#fff;overflow:hidden;color:#171719">
+<div style="height:47px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;font:600 15px Pretendard"><span>9:41</span><span style="width:24px;height:11px;border:1.5px solid #171719;border-radius:3px"></span></div>
+<div style="position:absolute;top:47px;left:0;right:0;bottom:84px;overflow:hidden;padding:16px 20px 0;display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:4px"><div style="font:600 14px/20px Pretendard;color:#0066FF">10월의 제철</div><div style="font:700 24px/32px Pretendard;letter-spacing:-.6px">지금 가장 맛있는 재료</div></div>
+<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:12px;row-gap:24px">
+<sc-for list="{{ skel }}" as="s" hint-placeholder-count="8">
+<div style="display:flex;flex-direction:column;gap:10px"><div style="aspect-ratio:1;border-radius:12px;background:#F4F4F5"></div><div style="width:50%;height:20px;border-radius:6px;background:#F4F4F5"></div><div style="width:85%;height:14px;border-radius:6px;background:#F4F4F5"></div></div>
+</sc-for>
+</div></div>
+<div style="position:absolute;left:0;right:0;bottom:0;height:84px;border-top:1px solid rgba(112,115,124,.16);background:#fff;display:flex;padding-top:8px">
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;color:#0066FF"><span style="width:22px;height:22px;border:2px solid #0066FF;border-radius:6px;background:#EAF2FE"></span><span style="font:600 11px/14px Pretendard">홈</span></div>
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;color:rgba(55,56,60,.61)"><span style="width:22px;height:22px;border:2px solid rgba(55,56,60,.4);border-radius:6px"></span><span style="font:500 11px/14px Pretendard">저장함</span></div>
+<span style="position:absolute;left:128px;bottom:8px;width:134px;height:5px;border-radius:3px;background:#171719"></span></div>
+</div></div>
+<sc-if value="{{ showNotes }}" hint-placeholder-val="{{ true }}"><div style="width:390px;font:17px/1.35 Gaegu,cursive;color:#555">• 헤더는 즉시 노출, 카드 8개만 스켈레톤</div></sc-if>
+</div>
+
+<div class="dv-opt" id="1i"><div class="dv-olabel"><a class="dv-oid" href="#1i">1i</a>홈 — 에러</div>
+<div class="dv-card" style="width:390px"><div style="position:relative;width:390px;height:844px;background:#fff;overflow:hidden;color:#171719">
+<div style="height:47px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;font:600 15px Pretendard"><span>9:41</span><span style="width:24px;height:11px;border:1.5px solid #171719;border-radius:3px"></span></div>
+<div style="padding:16px 20px 0;display:flex;flex-direction:column;gap:4px"><div style="font:600 14px/20px Pretendard;color:#0066FF">10월의 제철</div><div style="font:700 24px/32px Pretendard;letter-spacing:-.6px">지금 가장 맛있는 재료</div></div>
+<div style="position:absolute;top:160px;left:20px;right:20px;bottom:84px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;text-align:center">
+<span style="width:48px;height:48px;border-radius:24px;border:2px solid rgba(55,56,60,.28);display:flex;align-items:center;justify-content:center;font:700 22px/1 Pretendard;color:rgba(55,56,60,.4)">!</span>
+<div style="display:flex;flex-direction:column;gap:6px"><div style="font:600 18px/26px Pretendard">재료를 불러오지 못했어요</div><div style="font:400 14px/20px Pretendard;color:rgba(55,56,60,.61)">네트워크 연결을 확인하고 다시 시도해 주세요</div></div>
+<div style="height:40px;padding:0 18px;border-radius:10px;border:1px solid rgba(112,115,124,.22);display:flex;align-items:center;font:600 14px/20px Pretendard;color:#0066FF">다시 시도</div>
+</div>
+<div style="position:absolute;left:0;right:0;bottom:0;height:84px;border-top:1px solid rgba(112,115,124,.16);background:#fff;display:flex;padding-top:8px">
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;color:#0066FF"><span style="width:22px;height:22px;border:2px solid #0066FF;border-radius:6px;background:#EAF2FE"></span><span style="font:600 11px/14px Pretendard">홈</span></div>
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;color:rgba(55,56,60,.61)"><span style="width:22px;height:22px;border:2px solid rgba(55,56,60,.4);border-radius:6px"></span><span style="font:500 11px/14px Pretendard">저장함</span></div>
+<span style="position:absolute;left:128px;bottom:8px;width:134px;height:5px;border-radius:3px;background:#171719"></span></div>
+</div></div>
+<sc-if value="{{ showNotes }}" hint-placeholder-val="{{ true }}"><div style="width:390px;font:17px/1.35 Gaegu,cursive;color:#555">• Secondary(아웃라인) 버튼 — Primary는 CTA 전용</div></sc-if>
+</div>
+
+<div class="dv-opt" id="1j"><div class="dv-olabel"><a class="dv-oid" href="#1j">1j</a>재료 상세 — 빈 상태</div>
+<div class="dv-card" style="width:390px"><div style="position:relative;width:390px;height:844px;background:#fff;overflow:hidden;color:#171719">
+<div style="height:47px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;font:600 15px Pretendard"><span>9:41</span><span style="width:24px;height:11px;border:1.5px solid #171719;border-radius:3px"></span></div>
+<div style="height:52px;display:grid;grid-template-columns:52px 1fr 52px;align-items:center;padding:0 4px"><span style="width:44px;height:44px;display:flex;align-items:center;justify-content:center;font:400 32px/1 Pretendard">‹</span><span style="text-align:center;font:600 17px/24px Pretendard">무</span><span></span></div>
+<div style="padding:4px 20px 0;display:flex;flex-direction:column;gap:20px">
+<div style="height:200px;border-radius:12px;background:repeating-linear-gradient(135deg,#F4F4F5 0 10px,#EBECEE 10px 11px);display:flex;align-items:center;justify-content:center"><span style="font:500 11px ui-monospace,Menlo,monospace;color:rgba(55,56,60,.55)">재료 히어로 이미지</span></div>
+<div style="display:flex;flex-direction:column;gap:8px;align-items:flex-start"><div style="font:700 24px/32px Pretendard;letter-spacing:-.6px">무</div><div style="font:400 16px/24px Pretendard;color:rgba(55,56,60,.61)">단맛이 오른 가을 무</div><span style="margin-top:4px;padding:6px 10px;border-radius:8px;background:#EAF2FE;color:#0066FF;font:600 13px/18px Pretendard">10월 ~ 12월 제철</span></div>
+<div style="display:flex;padding:3px;border-radius:10px;background:#F4F4F5"><div style="flex:1;height:38px;border-radius:8px;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.08);display:flex;align-items:center;justify-content:center;font:600 14px/20px Pretendard;color:#0066FF">쇼츠</div><div style="flex:1;height:38px;display:flex;align-items:center;justify-content:center;font:500 14px/20px Pretendard;color:rgba(55,56,60,.61)">롱폼</div></div>
+<div style="padding:48px 0;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center"><div style="font:600 16px/24px Pretendard">아직 준비된 영상이 없어요</div><div style="font:400 14px/20px Pretendard;color:rgba(55,56,60,.61)">롱폼 탭에서 다른 영상을 확인해 보세요</div></div>
+</div>
+</div></div>
+<sc-if value="{{ showNotes }}" hint-placeholder-val="{{ true }}"><div style="width:390px;font:17px/1.35 Gaegu,cursive;color:#555">• 탭 단위 빈 상태 — 반대 탭에 영상이 있으면 안내<br>• 상세 로딩은 1b 레이아웃 그대로 스켈레톤</div></sc-if>
+</div>
+
+<div class="dv-opt" id="1k"><div class="dv-olabel"><a class="dv-oid" href="#1k">1k</a>저장 해제 + 토스트</div>
+<div class="dv-card" style="width:390px"><div style="position:relative;width:390px;height:844px;background:#fff;overflow:hidden;color:#171719">
+<div style="height:47px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;font:600 15px Pretendard"><span>9:41</span><span style="width:24px;height:11px;border:1.5px solid #171719;border-radius:3px"></span></div>
+<div style="position:absolute;top:47px;left:0;right:0;bottom:84px;overflow:hidden;padding:16px 20px 0;display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;align-items:baseline;gap:8px"><div style="font:700 24px/32px Pretendard;letter-spacing:-.6px">저장한 레시피</div><div style="font:500 12px/16px Pretendard;color:rgba(55,56,60,.61)">3개</div></div>
+<div style="display:flex;gap:8px"><span style="height:36px;padding:0 14px;border-radius:18px;background:#0066FF;color:#fff;display:flex;align-items:center;font:600 14px/20px Pretendard">전체</span><span style="height:36px;padding:0 14px;border-radius:18px;border:1px solid rgba(112,115,124,.22);display:flex;align-items:center;font:500 14px/20px Pretendard;color:rgba(46,47,51,.88)">쇼츠</span><span style="height:36px;padding:0 14px;border-radius:18px;border:1px solid rgba(112,115,124,.22);display:flex;align-items:center;font:500 14px/20px Pretendard;color:rgba(46,47,51,.88)">롱폼</span></div>
+<div style="display:flex;flex-direction:column;gap:4px">
+<sc-for list="{{ savedAfter }}" as="v" hint-placeholder-count="3">
+<div style="display:flex;gap:14px;padding:10px 0;align-items:flex-start">
+<div style="position:relative;width:96px;height:96px;flex:none;border-radius:12px;background:repeating-linear-gradient(135deg,#F4F4F5 0 10px,#EBECEE 10px 11px)"><span style="position:absolute;left:6px;bottom:6px;padding:2px 6px;border-radius:4px;background:rgba(0,0,0,.6);color:#fff;font:500 11px/14px Pretendard">{{ v.type }}</span></div>
+<div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:6px"><div style="font:600 16px/22px Pretendard;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">{{ v.title }}</div><div style="display:flex;gap:6px;align-items:center"><span style="padding:2px 8px;border-radius:6px;background:#F4F4F5;font:500 12px/16px Pretendard;color:rgba(46,47,51,.88)">{{ v.tag }}</span><span style="font:500 12px/16px Pretendard;color:rgba(55,56,60,.61)">{{ v.ch }}</span></div></div>
+<span style="width:44px;height:44px;flex:none;display:flex;align-items:center;justify-content:center;margin:-6px -10px 0 -6px;font:400 22px/1 Pretendard;color:#FF4242">♥</span>
+</div>
+</sc-for>
+</div></div>
+<div style="position:absolute;left:20px;right:20px;bottom:100px;height:52px;padding:0 8px 0 16px;border-radius:12px;background:rgba(23,23,25,.9);color:#fff;display:flex;align-items:center;justify-content:space-between;box-shadow:0 4px 12px rgba(0,0,0,.12)"><span style="font:500 14px/20px Pretendard">저장이 해제됐어요</span><span style="height:44px;padding:0 10px;display:flex;align-items:center;font:600 14px/20px Pretendard;color:#69A5FF">실행 취소</span></div>
+<div style="position:absolute;left:0;right:0;bottom:0;height:84px;border-top:1px solid rgba(112,115,124,.16);background:#fff;display:flex;padding-top:8px">
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;color:rgba(55,56,60,.61)"><span style="width:22px;height:22px;border:2px solid rgba(55,56,60,.4);border-radius:6px"></span><span style="font:500 11px/14px Pretendard">홈</span></div>
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;color:#0066FF"><span style="width:22px;height:22px;border:2px solid #0066FF;border-radius:6px;background:#EAF2FE"></span><span style="font:600 11px/14px Pretendard">저장함</span></div>
+<span style="position:absolute;left:128px;bottom:8px;width:134px;height:5px;border-radius:3px;background:#171719"></span></div>
+</div></div>
+<sc-if value="{{ showNotes }}" hint-placeholder-val="{{ true }}"><div style="width:390px;font:17px/1.35 Gaegu,cursive;color:#555">• 하트 탭 → 항목 즉시 제거 + 토스트 4초<br>• "실행 취소" 시 원래 위치로 복원</div></sc-if>
+</div>
+</div>
+
+<div style="font:700 22px/1.2 Gaegu,cursive;color:#3a3a3a;margin:44px 0 14px">③ 대안 탐색 — 비교용</div>
+<div class="dv-opts">
+
+<div class="dv-opt" id="1l"><div class="dv-olabel"><a class="dv-oid" href="#1l">1l</a>홈 대안 — 1열 리스트형 (<a class="dv-oid" href="#1a">1a</a> 비교)</div>
+<div class="dv-card" style="width:390px"><div style="position:relative;width:390px;height:844px;background:#fff;overflow:hidden;color:#171719">
+<div style="height:47px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;font:600 15px Pretendard"><span>9:41</span><span style="width:24px;height:11px;border:1.5px solid #171719;border-radius:3px"></span></div>
+<div style="position:absolute;top:47px;left:0;right:0;bottom:84px;overflow:hidden;padding:16px 20px 0;display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;flex-direction:column;gap:4px"><div style="font:600 14px/20px Pretendard;color:#0066FF">10월의 제철</div><div style="font:700 24px/32px Pretendard;letter-spacing:-.6px">지금 가장 맛있는 재료</div></div>
+<div style="display:flex;flex-direction:column">
+<sc-for list="{{ ingredients }}" as="it" hint-placeholder-count="8">
+<div style="display:flex;gap:14px;align-items:center;padding:6px 0"><div style="width:64px;height:64px;flex:none;border-radius:12px;background:repeating-linear-gradient(135deg,#F4F4F5 0 10px,#EBECEE 10px 11px)"></div><div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:2px"><div style="font:600 17px/24px Pretendard">{{ it.name }}</div><div style="font:500 14px/20px Pretendard;color:rgba(55,56,60,.61);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ it.desc }}</div></div><span style="font:400 22px/1 Pretendard;color:rgba(55,56,60,.28)">›</span></div>
+</sc-for>
+</div></div>
+<div style="position:absolute;left:0;right:0;bottom:0;height:84px;border-top:1px solid rgba(112,115,124,.16);background:#fff;display:flex;padding-top:8px">
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;color:#0066FF"><span style="width:22px;height:22px;border:2px solid #0066FF;border-radius:6px;background:#EAF2FE"></span><span style="font:600 11px/14px Pretendard">홈</span></div>
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;color:rgba(55,56,60,.61)"><span style="width:22px;height:22px;border:2px solid rgba(55,56,60,.4);border-radius:6px"></span><span style="font:500 11px/14px Pretendard">저장함</span></div>
+<span style="position:absolute;left:128px;bottom:8px;width:134px;height:5px;border-radius:3px;background:#171719"></span></div>
+</div></div>
+<sc-if value="{{ showNotes }}" hint-placeholder-val="{{ true }}"><div style="width:390px;font:17px/1.35 Gaegu,cursive;color:#555">• 8개가 스크롤 없이 한 화면에 → "한눈에" 목표엔 유리<br>• 대신 이미지가 작아져 계절감 약해짐</div></sc-if>
+</div>
+
+<div class="dv-opt" id="1m"><div class="dv-olabel"><a class="dv-oid" href="#1m">1m</a>상세 대안 — 탭 없이 섹션 2개 (<a class="dv-oid" href="#1b">1b</a> 비교)</div>
+<div class="dv-card" style="width:390px"><div style="position:relative;width:390px;height:844px;background:#fff;overflow:hidden;color:#171719">
+<div style="height:47px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;font:600 15px Pretendard"><span>9:41</span><span style="width:24px;height:11px;border:1.5px solid #171719;border-radius:3px"></span></div>
+<div style="height:52px;display:grid;grid-template-columns:52px 1fr 52px;align-items:center;padding:0 4px"><span style="width:44px;height:44px;display:flex;align-items:center;justify-content:center;font:400 32px/1 Pretendard">‹</span><span style="text-align:center;font:600 17px/24px Pretendard">전어</span><span></span></div>
+<div style="position:absolute;top:99px;left:0;right:0;bottom:0;overflow:hidden;padding:4px 0 0;display:flex;flex-direction:column;gap:24px">
+<div style="padding:0 20px;display:flex;gap:16px;align-items:center"><div style="width:96px;height:96px;flex:none;border-radius:12px;background:repeating-linear-gradient(135deg,#F4F4F5 0 10px,#EBECEE 10px 11px)"></div><div style="display:flex;flex-direction:column;gap:6px;align-items:flex-start"><div style="font:700 24px/32px Pretendard;letter-spacing:-.6px">전어</div><div style="font:400 14px/20px Pretendard;color:rgba(55,56,60,.61)">고소한 기름이 오르는 가을 생선</div><span style="padding:4px 8px;border-radius:8px;background:#EAF2FE;color:#0066FF;font:600 12px/16px Pretendard">9월 ~ 11월 제철</span></div></div>
+<div style="display:flex;flex-direction:column;gap:12px"><div style="padding:0 20px;display:flex;justify-content:space-between;align-items:baseline"><span style="font:600 20px/28px Pretendard;letter-spacing:-.3px">쇼츠</span><span style="font:500 14px/20px Pretendard;color:rgba(55,56,60,.61)">전체보기</span></div>
+<div style="display:flex;gap:12px;padding:0 20px"><sc-for list="{{ shorts }}" as="v" hint-placeholder-count="4"><div style="position:relative;width:132px;flex:none;aspect-ratio:9/16;border-radius:12px;overflow:hidden;background:repeating-linear-gradient(135deg,#F4F4F5 0 10px,#EBECEE 10px 11px)"><div style="position:absolute;left:0;right:0;bottom:0;padding:30px 10px 10px;background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.6));color:#fff;font:600 13px/18px Pretendard;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">{{ v.title }}</div></div></sc-for></div></div>
+<div style="display:flex;flex-direction:column;gap:12px;padding:0 20px"><div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font:600 20px/28px Pretendard;letter-spacing:-.3px">롱폼</span><span style="font:500 14px/20px Pretendard;color:rgba(55,56,60,.61)">전체보기</span></div>
+<sc-for list="{{ longs }}" as="v" hint-placeholder-count="3"><div style="display:flex;gap:12px;align-items:flex-start"><div style="position:relative;width:144px;flex:none;aspect-ratio:16/9;border-radius:10px;background:repeating-linear-gradient(135deg,#F4F4F5 0 10px,#EBECEE 10px 11px)"><span style="position:absolute;right:6px;bottom:6px;padding:1px 5px;border-radius:4px;background:rgba(0,0,0,.6);color:#fff;font:500 11px/14px Pretendard">{{ v.dur }}</span></div><div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:4px"><div style="font:600 15px/21px Pretendard;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">{{ v.title }}</div><div style="font:500 12px/16px Pretendard;color:rgba(55,56,60,.61)">{{ v.ch }}</div></div></div></sc-for>
+</div></div>
+</div></div>
+<sc-if value="{{ showNotes }}" hint-placeholder-val="{{ true }}"><div style="width:390px;font:17px/1.35 Gaegu,cursive;color:#555">• 쇼츠 가로 스크롤 + 롱폼 리스트를 한 페이지에<br>• 탭 1번 절약 → "3탭 안에 해결"에 유리<br>• 히어로를 축소해 영상이 첫 화면에 보이게</div></sc-if>
+</div>
+</div>
+
+<p class="dv-next">다음 단계 예시: "<a class="dv-oid" href="#1a">1a</a> 그리드 + <a class="dv-oid" href="#1m">1m</a> 상세 구조로 고해상도 시안 진행" · "영상 재생 시트에 같은 재료 다른 영상 추가" · "컴포넌트 variant / 토큰 정리 페이지 만들어줘"</p>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showNotes&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const saved = [
+      { title: '전어 회무침 1분 컷! 새콤달콤 초장 황금비율', tag: '전어', ch: '한끼뚝딱', type: '쇼츠' },
+      { title: '대하 소금구이, 프라이팬 하나로 끝내는 법', tag: '대하', ch: '자취요리 연구소', type: '롱폼' },
+      { title: '단호박 에그슬럿 전자레인지 5분 완성', tag: '단호박', ch: '오늘뭐먹지', type: '쇼츠' },
+      { title: '표고버섯 들깨탕 — 쌀쌀한 날 든든한 한 그릇', tag: '표고버섯', ch: '집밥선생', type: '롱폼' },
+    ];
+    return {
+      showNotes: this.props.showNotes ?? true,
+      ingredients: [
+        { name: '전어', desc: '고소한 기름이 오르는 가을 생선' },
+        { name: '대하', desc: '쫄깃하고 달큰한 가을 새우' },
+        { name: '감', desc: '달콤함이 절정인 가을 과일' },
+        { name: '배', desc: '시원하고 아삭한 수분 가득' },
+        { name: '단호박', desc: '포슬포슬 달콤한 가을 채소' },
+        { name: '고구마', desc: '구워도 쪄도 맛있는 간식' },
+        { name: '표고버섯', desc: '향이 진한 가을 버섯' },
+        { name: '무', desc: '단맛이 오른 가을 무' },
+      ],
+      shorts: [
+        { title: '전어 회무침 1분 컷! 새콤달콤 초장 황금비율' },
+        { title: '뼈째 바삭한 전어구이 에어프라이어 버전' },
+        { title: '전어 손질 30초 요약' },
+        { title: '전어 초밥 집에서 만들기' },
+      ],
+      longs: [
+        { title: '가을 전어구이, 집에서 냄새 없이 굽는 법 (뼈째 바삭하게)', ch: '자취요리 연구소', dur: '12:48' },
+        { title: '전어 한 마리로 회·무침·구이 3가지 요리', ch: '집밥선생', dur: '18:05' },
+        { title: '시장에서 좋은 전어 고르는 법과 손질', ch: '바다장보기', dur: '8:32' },
+      ],
+      shortsAll: [
+        { title: '전어 회무침 1분 컷! 새콤달콤 초장 황금비율' },
+        { title: '뼈째 바삭한 전어구이 에어프라이어 버전' },
+        { title: '전어 손질 30초 요약' },
+        { title: '전어 초밥 집에서 만들기' },
+        { title: '전어 밤젓 무침 밥도둑 레시피' },
+        { title: '전어 구이 냄새 잡는 꿀팁' },
+      ],
+      longsAll: [
+        { title: '가을 전어구이, 집에서 냄새 없이 굽는 법 (뼈째 바삭하게)', ch: '자취요리 연구소', dur: '12:48' },
+        { title: '전어 한 마리로 회·무침·구이 3가지 요리', ch: '집밥선생', dur: '18:05' },
+        { title: '시장에서 좋은 전어 고르는 법과 손질', ch: '바다장보기', dur: '8:32' },
+        { title: '전어 조림 — 무와 함께 졸이는 가을 반찬', ch: '오늘뭐먹지', dur: '10:14' },
+        { title: '전어 덮밥 한 그릇, 15분 자취 저녁', ch: '한끼뚝딱', dur: '6:57' },
+      ],
+      monthsBefore: ['1월','2월','3월','4월','5월','6월','7월','8월','9월'],
+      monthsAfter: ['11월','12월'],
+      saved,
+      savedAfter: saved.slice(1),
+      skel: [1, 2, 3, 4, 5, 6, 7, 8],
+    };
+  }
+}
+</script>
+</body>
+</html>

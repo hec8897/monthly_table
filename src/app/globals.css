@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+/* Wanted Foundation (Light) semantic tokens — wireframe approximations, official Montage values take precedence */
+@theme {
+  --font-sans: "Pretendard JP Variable", "Pretendard JP", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+
+  --color-primary: #0066ff;
+  --color-primary-strong: #005eeb;
+  --color-primary-heavy: #0054d1;
+  --color-primary-bg: #eaf2fe;
+  --color-background: #ffffff;
+  --color-fill: #f4f4f5;
+  --color-fill-alt: #f7f7f8;
+  --color-label: #171719;
+  --color-label-neutral: rgb(46 47 51 / 0.88);
+  --color-label-alt: rgb(55 56 60 / 0.61);
+  --color-label-assistive: rgb(55 56 60 / 0.28);
+  --color-line: rgb(112 115 124 / 0.22);
+  --color-line-alt: rgb(112 115 124 / 0.16);
+  --color-negative: #ff4242;
+  --color-inverse-bg: rgb(23 23 25 / 0.9);
+  --color-inverse-primary: #7cb0ff;
+  --color-dimmer: rgb(0 0 0 / 0.52);
+
+  --text-title3: 24px;
+  --text-title3--line-height: 32px;
+  --text-title3--letter-spacing: -0.6px;
+  --text-title3--font-weight: 700;
+  --text-heading2: 20px;
+  --text-heading2--line-height: 28px;
+  --text-heading2--letter-spacing: -0.3px;
+  --text-heading2--font-weight: 600;
+  --text-headline1: 18px;
+  --text-headline1--line-height: 26px;
+  --text-headline1--letter-spacing: -0.2px;
+  --text-headline1--font-weight: 600;
+  --text-headline2: 17px;
+  --text-headline2--line-height: 24px;
+  --text-headline2--font-weight: 600;
+  --text-body1: 16px;
+  --text-body1--line-height: 24px;
+  --text-label1: 14px;
+  --text-label1--line-height: 20px;
+  --text-caption1: 12px;
+  --text-caption1--line-height: 16px;
+  --text-caption1--letter-spacing: 0.2px;
+  --text-caption2: 11px;
+  --text-caption2--line-height: 14px;
+  --text-caption2--letter-spacing: 0.3px;
+
+  --animate-fade: fade 150ms ease-out;
+  --animate-slide-in: slide-in 250ms ease-out;
+  --animate-slide-up: slide-up 250ms ease-out;
+  --animate-pop: pop 200ms ease-out;
+
+  @keyframes fade {
+    from { opacity: 0; }
+  }
+  @keyframes slide-in {
+    from { transform: translateX(100%); }
+  }
+  @keyframes slide-up {
+    from { transform: translateY(100%); }
+  }
+  @keyframes pop {
+    50% { transform: scale(1.2); }
+  }
+}
+
+/* wireframe-style image placeholder until real assets land */
+@utility stripes {
+  background: repeating-linear-gradient(135deg, var(--color-fill) 0 10px, var(--color-fill-alt) 10px 20px);
+}
+
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+body {
+  -webkit-tap-highlight-color: transparent;
+}
