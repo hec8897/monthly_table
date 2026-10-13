@@ -1,19 +1,1080 @@
 {
   "jeoneo": {
     "shorts": [
-      { "youtubeId": "ms_szubn5TI", "title": "절대 전어 식용유로 구우면 안됩니다!", "channel": "수부해TV subuhae" },
-      { "youtubeId": "yDyFHqpV-LE", "title": "전어를 가장 맛있게 먹는 레시피?", "channel": "마법소년 김셰프" },
-      { "youtubeId": "Rzak6u8EtAY", "title": "[082] 무뼈 전어회를 만들어보자 (집에서)", "channel": "스시 매드맨" },
-      { "youtubeId": "-5zexTYF-18", "title": "숯불에 굽는 칼짚 전어구이", "channel": "내맘남 NAEMAMNAM" },
-      { "youtubeId": "ZL5qsz8m7iI", "title": "가을 전어는 숯불에 구워야죠 🐟🔥 | Charcoal-Grilled Gizzard Shad #전어구이 #전어 #생선구이", "channel": "캠핑한끼CampingHankki" },
-      { "youtubeId": "0v7opKalk7U", "title": "전어구이 굵은소금 뿌리지 마세요 🐟 굽기 전 딱 10분이면 껍질 안 벗겨지고 비린내도 없는 가을 전어 굽는법 #전어구이 #황금레시피 #에어프라이어", "channel": "꿀정보샷" }
+      {
+        "youtubeId": "ms_szubn5TI",
+        "title": "절대 전어 식용유로 구우면 안됩니다!",
+        "channel": "수부해TV subuhae",
+        "views": 3234386
+      },
+      {
+        "youtubeId": "yDyFHqpV-LE",
+        "title": "전어를 가장 맛있게 먹는 레시피?",
+        "channel": "마법소년 김셰프",
+        "views": 3285774
+      },
+      {
+        "youtubeId": "Rzak6u8EtAY",
+        "title": "[082] 무뼈 전어회를 만들어보자 (집에서)",
+        "channel": "스시 매드맨",
+        "views": 965231
+      },
+      {
+        "youtubeId": "-5zexTYF-18",
+        "title": "숯불에 굽는 칼짚 전어구이",
+        "channel": "내맘남 NAEMAMNAM",
+        "views": 479956
+      },
+      {
+        "youtubeId": "ZL5qsz8m7iI",
+        "title": "가을 전어는 숯불에 구워야죠 🐟🔥 | Charcoal-Grilled Gizzard Shad #전어구이 #전어 #생선구이",
+        "channel": "캠핑한끼CampingHankki",
+        "views": 162699
+      },
+      {
+        "youtubeId": "0v7opKalk7U",
+        "title": "전어구이 굵은소금 뿌리지 마세요 🐟 굽기 전 딱 10분이면 껍질 안 벗겨지고 비린내도 없는 가을 전어 굽는법 #전어구이 #황금레시피 #에어프라이어",
+        "channel": "꿀정보샷",
+        "views": 152254
+      }
     ],
     "longs": [
-      { "youtubeId": "hN_lMrkS15s", "title": "[전어 손질법 대공개!] 영상을 보는 순간 당신도 전어손질 전문가! [수아아빠TV]", "channel": "거제도 수아아빠TV", "duration": "20:02" },
-      { "youtubeId": "41Ezl0vU4Gc", "title": "전어 회뜨기 누구나도 쉽게 할 수 있다.[전어손질법]", "channel": "나는갑수다 Gapsu", "duration": "7:30" },
-      { "youtubeId": "exuySLDv2dU", "title": "집 나간 며느리도 돌아오는! 가을 전어 구이!", "channel": "핫식당", "duration": "7:40" },
-      { "youtubeId": "WRkJaHVrpDs", "title": "가을전어를 회나 구이로 먹지 않고 이렇게 만들어 두니 일년내내 가족들이 행복해합니다/전어앤초비 전어젓갈(가을전어요리) autumn gizzard shad", "channel": "sogyo table 소교식탁TV", "duration": "8:48" },
-      { "youtubeId": "rgPfLeb0MKU", "title": "집에서 전어코스", "channel": "취미로 요리하는 남자 Yonam", "duration": "15:15" }
+      {
+        "youtubeId": "hN_lMrkS15s",
+        "title": "[전어 손질법 대공개!] 영상을 보는 순간 당신도 전어손질 전문가! [수아아빠TV]",
+        "channel": "거제도 수아아빠TV",
+        "duration": "20:02",
+        "views": 974856
+      },
+      {
+        "youtubeId": "41Ezl0vU4Gc",
+        "title": "전어 회뜨기 누구나도 쉽게 할 수 있다.[전어손질법]",
+        "channel": "나는갑수다 Gapsu",
+        "duration": "7:30",
+        "views": 601295
+      },
+      {
+        "youtubeId": "exuySLDv2dU",
+        "title": "집 나간 며느리도 돌아오는! 가을 전어 구이!",
+        "channel": "핫식당",
+        "duration": "7:40",
+        "views": 691755
+      },
+      {
+        "youtubeId": "WRkJaHVrpDs",
+        "title": "가을전어를 회나 구이로 먹지 않고 이렇게 만들어 두니 일년내내 가족들이 행복해합니다/전어앤초비 전어젓갈(가을전어요리) autumn gizzard shad",
+        "channel": "sogyo table 소교식탁TV",
+        "duration": "8:48",
+        "views": 566321
+      },
+      {
+        "youtubeId": "rgPfLeb0MKU",
+        "title": "집에서 전어코스",
+        "channel": "취미로 요리하는 남자 Yonam",
+        "duration": "15:15",
+        "views": 438338
+      }
+    ]
+  },
+  "daeha": {
+    "shorts": [
+      {
+        "youtubeId": "X5aap_hjHAs",
+        "title": "이제 새우 소금구이 그만하세요!",
+        "channel": "수부해TV subuhae",
+        "views": 3976301
+      },
+      {
+        "youtubeId": "2CcF18paD0g",
+        "title": "새우가 보이면 무조건 이렇게 조리 하세요 쌍 따봉입니다. #맛팩토리 #대하구이",
+        "channel": "맛팩토리",
+        "views": 3118659
+      },
+      {
+        "youtubeId": "vlB2cXbkbfQ",
+        "title": "새우 손질이 이렇게 쉬웠나?🦐",
+        "channel": "행운클로버",
+        "views": 2419918
+      },
+      {
+        "youtubeId": "SAAwP1RLtsM",
+        "title": "대하 소금구이 하지 마세요",
+        "channel": "고기남자",
+        "views": 1702633
+      },
+      {
+        "youtubeId": "x0Msn1wpjJU",
+        "title": "버터갈릭새우 만들기",
+        "channel": "뚜비두밥 맛있는밥",
+        "views": 1294919
+      },
+      {
+        "youtubeId": "tnyNrQGQ5uc",
+        "title": "새우소금구이 100배 맛있게 먹는 꿀팁!",
+        "channel": "잡솨",
+        "views": 844578
+      }
+    ],
+    "longs": [
+      {
+        "youtubeId": "YNsaY4Gs-GM",
+        "title": "새우의 모든것!  이것만 숙지하세요 보관, 손질, 까는법, 소금구이",
+        "channel": "백년밥상TV",
+        "duration": "6:29",
+        "views": 1111031
+      },
+      {
+        "youtubeId": "XcQGG7nXh-o",
+        "title": "새우소금구이에는 \"이걸\" 넣어야 입에 짝짝 붙습니다",
+        "channel": "김대석 셰프TV",
+        "duration": "5:36",
+        "views": 849599
+      },
+      {
+        "youtubeId": "yz3ZdkuYKkk",
+        "title": "🥇50만🥇 너무 맛있어서 \" 새우 \" 또 사러 갑니다! 👍👍 한번 만들어보면 다시 돌아갈수 없어요. 간단하고 맛있는 대하 새우 요리 3가지 강쉪",
+        "channel": "강쉪",
+        "duration": "12:25",
+        "views": 754088
+      },
+      {
+        "youtubeId": "JD5KxTd7I3Q",
+        "title": "250만 조회수 나온 새우 소금 구이 10배 쉽게 먹는 방법",
+        "channel": "현해랑 - 제철 수산 식탁",
+        "duration": "4:22",
+        "views": 382601
+      },
+      {
+        "youtubeId": "G2mrGoEkJIk",
+        "title": "대하소금구이 가장 맛있게 먹는 법",
+        "channel": "요리왕비룡 셰프TV",
+        "duration": "8:00",
+        "views": 276202
+      }
+    ]
+  },
+  "gam": {
+    "shorts": [
+      {
+        "youtubeId": "6kBPqsnkvqI",
+        "title": "500시간 걸린 야매‘곶감’ 만들기",
+        "channel": "이상한 과자가게 weird sweets shop",
+        "views": 2024457
+      },
+      {
+        "youtubeId": "WaRDH45M9io",
+        "title": "이렇게 하시면 1년동안 감 맛있게 드실 수 있어요.",
+        "channel": "요리고수",
+        "views": 1794305
+      },
+      {
+        "youtubeId": "93yHkAGKbS0",
+        "title": "홍시 오래 보관하는 과학적인 방법 🍂 | 냉동·실온·냉장별 차이 | 감과 홍시를 오래두는 꿀팁",
+        "channel": "한국의 맛과 멋",
+        "views": 1334794
+      },
+      {
+        "youtubeId": "XvjNWY_Ur-Y",
+        "title": "감(대봉감)깨끗하게 빨리 홍시 만드는 방법(농사의신)",
+        "channel": "농사의신",
+        "views": 516492
+      },
+      {
+        "youtubeId": "i10a1gqbaR4",
+        "title": "집에 남은 단감 있으세요? 이렇게 드셔보세요👍 #Shorts",
+        "channel": "엄마와아들 Mom's Cooking",
+        "views": 654707
+      },
+      {
+        "youtubeId": "PjYZGF9gfFw",
+        "title": "냉동실 곶감 털어서 매콤하게 무침으로...#shorts",
+        "channel": "울산댁의 오늘저녁, K-mom's cuisine",
+        "views": 2153
+      }
+    ],
+    "longs": [
+      {
+        "youtubeId": "KbEmkxNCqK8",
+        "title": "#대봉감 빨리 홍시 만드는 방법  #감3일 만에 홍시 만들기",
+        "channel": "도시의농부 강기운",
+        "duration": "8:02",
+        "views": 904918
+      },
+      {
+        "youtubeId": "dopl72W9KH0",
+        "title": "대봉감을 이렇게 했더니 쫄깃한 곶감이 되었어요",
+        "channel": "주부나라",
+        "duration": "5:13",
+        "views": 704768
+      },
+      {
+        "youtubeId": "xWc_KeO2528",
+        "title": "덜 익은 떫은 감 맛있는 홍시 만드는 비법 / 빨리 홍시를 만들고 싶을 땐 이렇게 해보세요! / 덜 익은 감을 자연홍시처럼 달고 맛나게 익히는 방법",
+        "channel": "코코네",
+        "duration": "3:04",
+        "views": 373001
+      },
+      {
+        "youtubeId": "5MbXXoGxtdQ",
+        "title": "실패없이 당도 높고 색깔 좋은 반건시 곶감 만드는 방법. 곶감 곰팡이 걱정 끝!",
+        "channel": "달콩이네 농장 -서창석",
+        "duration": "7:53",
+        "views": 157597
+      },
+      {
+        "youtubeId": "TRM58_qRkOw",
+        "title": "[단감보관하는법]물컹해질  걱정하지마세요👍아삭하고 맛있게 먹을수있는 이방법으로 보관해보세요👍❤",
+        "channel": "참살이자연집밥",
+        "duration": "6:20",
+        "views": 141793
+      }
+    ]
+  },
+  "bae": {
+    "shorts": [
+      {
+        "youtubeId": "ZtXfXuFMxqs",
+        "title": "배를 이렇게 먹으면 환절기에 병원 안 가도 되는 천연감기약|기침을 멎게 하는 마법의 배숙 레시피",
+        "channel": "황금밥그릇 - 간단하고 건강한 요리",
+        "views": 2838499
+      },
+      {
+        "youtubeId": "OP7lNyQLOQg",
+        "title": "집에 있는 배로 효녀되는 ㄹㅇ꿀팁",
+        "channel": "이상한 과자가게 weird sweets shop",
+        "views": 1739799
+      },
+      {
+        "youtubeId": "xpE3yS69BIE",
+        "title": "집에 남은 배 있으세요? 이렇게 드셔보세요 #Shorts",
+        "channel": "엄마와아들 Mom's Cooking",
+        "views": 1289066
+      },
+      {
+        "youtubeId": "k1wxu-06DHk",
+        "title": "설탕❌ 진한 배대추차. 면역력강화 목감기 피로회복",
+        "channel": "비타민 밥상",
+        "views": 849678
+      },
+      {
+        "youtubeId": "YojxW9PyZwU",
+        "title": "배는 이렇게 드셔보세요 환절기 목감기에 최고!~#shorts",
+        "channel": "오늘도 먹고먹고",
+        "views": 710693
+      },
+      {
+        "youtubeId": "gvBD5XUthKw",
+        "title": "감기 뚝 떨어지는 배숙 만들기 | 배중탕 꿀차 간단 요리법 레시피 | 신혼 자취 요리 추천",
+        "channel": "돈돈부부",
+        "views": 292340
+      }
+    ],
+    "longs": [
+      {
+        "youtubeId": "Zidtz7fxZbc",
+        "title": "기관지 약하고 추위타는 분들 시청필수✔ ︎ 보약같이 찐~~한 배생강청 만드는 방법 (생강껍질 단숨에 벗김)",
+        "channel": "딸을 위한 레시피 Recipes for daughters",
+        "duration": "8:03",
+        "views": 878535
+      },
+      {
+        "youtubeId": "hWvn-yMA_VA",
+        "title": "배청 하나면 올 겨울 끝! 감기걱정 없는 배청 만들기😋 이렇게만 만들어 보세요!",
+        "channel": "엄마의가정식",
+        "duration": "4:11",
+        "views": 841286
+      },
+      {
+        "youtubeId": "LLl4Mjcev_M",
+        "title": "목이 칼칼해? 맛있는 감기약 배숙 만들기 / 배꿀찜 만드는 법",
+        "channel": "집밥 korean home cooking",
+        "duration": "5:21",
+        "views": 222791
+      },
+      {
+        "youtubeId": "BhX6vndBkuY",
+        "title": "기침 가래 없애는 가장 쉬운 방법! 전기밥솥에 배를 넣으면 약이 됩니다",
+        "channel": "김소형채널H",
+        "duration": "6:50",
+        "views": 192481
+      },
+      {
+        "youtubeId": "L75chsgHQew",
+        "title": "[배재배] 맛있는배 오래보관하는 방법 | 아삭한 식감의 배 신선하게 보관하는 방법 | 여름까지도 가능해요~",
+        "channel": "한빛농원맛다맛배",
+        "duration": "5:42",
+        "views": 40095
+      }
+    ]
+  },
+  "danhobak": {
+    "shorts": [
+      {
+        "youtubeId": "VlnyLkDGG0Q",
+        "title": "단호박 20kg 순삭",
+        "channel": "밥피티 bop pt",
+        "views": 5961678
+      },
+      {
+        "youtubeId": "xzp3l9g4KWA",
+        "title": "'탑클래스' 셰프들만 알고 있다는 단호박 스프 알려주는 강레오",
+        "channel": "쇼츠클립",
+        "views": 5374964
+      },
+      {
+        "youtubeId": "CvOvHlx9fos",
+        "title": "또 맛있어버리네 #간단요리 #단호박",
+        "channel": "원쿡",
+        "views": 4139757
+      },
+      {
+        "youtubeId": "AYxmaCdA8XE",
+        "title": "빵 부담되시는 분들 이거 드세요 #단호박빵#편스토랑레시피#노오븐#노밀가루#이정현단호박빵",
+        "channel": "요리모아",
+        "views": 4092383
+      },
+      {
+        "youtubeId": "UCC8SFJZi1Q",
+        "title": "브런치 가게 뺨때리는 단호박 스프 만들기 #다이어트식단",
+        "channel": "릴리쿡",
+        "views": 3022220
+      },
+      {
+        "youtubeId": "mMFnhJi7YQ8",
+        "title": "아침에 먹기 딱 좋은 '단호박샐러드' 알려드릴게요!",
+        "channel": "추추의 한끼식사",
+        "views": 2834629
+      }
+    ],
+    "longs": [
+      {
+        "youtubeId": "EduS-bdu1lk",
+        "title": "[단호박죽] 찹쌀가루 필요 없어요! 집에 있는 쌀로 호박죽 맛있게 만드는 법 pumpkin porridge",
+        "channel": "[윤이련]50년 요리비결",
+        "duration": "5:34",
+        "views": 1468100
+      },
+      {
+        "youtubeId": "p5P9L-Oir6o",
+        "title": "바쁘더라도 내손으로.. 엄마 이정현의 초간단 건강 간식 단호박빵★ 6분이면 완성 [신상출시 편스토랑/Fun-Staurant] | KBS 230901 방송",
+        "channel": "KBS Entertain",
+        "duration": "4:21",
+        "views": 716227
+      },
+      {
+        "youtubeId": "oHsfMhz1QB0",
+        "title": "단호박 있으시다면 이건 무조건 해보셔야 합니다 진짜 간단해요/ If you have Pumpkin, Don't miss this Super Easy recipe. / 단호박 인절미",
+        "channel": "호주가이버hojugyver",
+        "duration": "5:18",
+        "views": 751129
+      },
+      {
+        "youtubeId": "lZat8LeJNsU",
+        "title": "단호박 진작 이렇게 먹을걸... 지금까지 버린 단호박이 아까워요! 일주일이 편한 단호박 레시피 보관법",
+        "channel": "묘식당 Rabbit's",
+        "duration": "3:44",
+        "views": 374945
+      },
+      {
+        "youtubeId": "PX6dwofWAcY",
+        "title": "샐러드 바에서 먹어본  단호박 샐러드 이럴 수가~~",
+        "channel": "신나는셰프 김선영",
+        "duration": "5:34",
+        "views": 97429
+      }
+    ]
+  },
+  "goguma": {
+    "shorts": [
+      {
+        "youtubeId": "ceVFSNhynks",
+        "title": "밀가루빵 아닌 건강한 고구마빵 드세요! #고구마요리 #고구마레시피 #고구마간식 #다이어트간식 #다이어트요리 #고구마빵",
+        "channel": "홈베이킹하는 쭌맘",
+        "views": 4315407
+      },
+      {
+        "youtubeId": "DJDKEVrkaf8",
+        "title": "에? 고구마박스에 이걸 넣으라고? 🍠냉장고보다 안전한 1년보관비법! #시니어건강",
+        "channel": "건강대박tv",
+        "views": 3577590
+      },
+      {
+        "youtubeId": "fxFzsCwoigM",
+        "title": "집에 굴러다니는 고구마가 있다면?😄 이렇게 드셔보세요 #Shorts",
+        "channel": "엄마와아들 Mom's Cooking",
+        "views": 2352460
+      },
+      {
+        "youtubeId": "YmmPBEPe7gw",
+        "title": "의외로 모르는 고구마 신박하게 먹는 법",
+        "channel": "유지만 yuziman",
+        "views": 2173073
+      },
+      {
+        "youtubeId": "1X1jOZKumsg",
+        "title": "똥손도 성공하는 군고구마 만들기 🔴저장 필수🔴",
+        "channel": "마놉 레시피",
+        "views": 1945527
+      },
+      {
+        "youtubeId": "ukk3EXTyKzk",
+        "title": "고구마맛탕 만들기 튀기지 않고 팬에 구워 올리고당으로 끝내는 #Shorts",
+        "channel": "푸드픽",
+        "views": 788
+      }
+    ],
+    "longs": [
+      {
+        "youtubeId": "NGnUSj1Z97U",
+        "title": "3분 초간단 간식 고구마스틱! 전자레인지 튀김 고구마만으로 만드는 건강 담백 스낵! 다이어트에도 좋아요!",
+        "channel": "김소형채널H",
+        "duration": "7:31",
+        "views": 1163293
+      },
+      {
+        "youtubeId": "WWT8PjlQZgs",
+        "title": "인스타 60만뷰 레시피!! 단 4가지 재료로 만드는 다이어트 고구마케이크 ㅣ 노밀가루 노설탕 다이어트 식단",
+        "channel": "감량쿡",
+        "duration": "10:15",
+        "views": 829948
+      },
+      {
+        "youtubeId": "wYBHjtZgJr8",
+        "title": "고구마 이제 이렇게 드세요😃! 너무 맛있어서 집에 고구마가 남아나질 않네요👍! 2가지 고구마요리쉬운",
+        "channel": "쿤키친 - Kun Kitchen",
+        "duration": "6:50",
+        "views": 789008
+      },
+      {
+        "youtubeId": "AjfZDb8kiEw",
+        "title": "고구마 왜 이렇게 먹을 생각을 못했을까요?👍👍순식간에 고구마 한박스 사라지는 마성의맛! ! 건강하고 간단한 고구마 요리 3가지 강쉪",
+        "channel": "강쉪",
+        "duration": "8:11",
+        "views": 102028
+      },
+      {
+        "youtubeId": "AAi7JRpgrGQ",
+        "title": "단짠단짠 부서지지않는 제철 고구마간장조림",
+        "channel": "영자씨의 부엌Young-Ja's Kitchen",
+        "duration": "3:25",
+        "views": 73406
+      }
+    ]
+  },
+  "pyogo": {
+    "shorts": [
+      {
+        "youtubeId": "7KFqOxiKMsE",
+        "title": "면역력 키워주는 '표고버섯볶음' 알려드릴게요!",
+        "channel": "추추의 한끼식사",
+        "views": 7085184
+      },
+      {
+        "youtubeId": "4BvydrrrZq8",
+        "title": "정관스님 사찰음식 표고버섯 조청 조림 레시피 #표고버섯 #사찰음식",
+        "channel": "87아빠",
+        "views": 1976086
+      },
+      {
+        "youtubeId": "bu61cgvbHP8",
+        "title": "특별하게 넣은것이 없는데 맛있는 표고버섯볶음 만들기#표고버섯볶음#표고버섯요리",
+        "channel": "김진옥요리가좋다",
+        "views": 1754098
+      },
+      {
+        "youtubeId": "Dr2SrGvA_Z8",
+        "title": "표고버섯볶음은 기름으로 볶지 말고 이렇게 볶아보세요😍",
+        "channel": "엄마와아들 Mom's Cooking",
+        "views": 1185201
+      },
+      {
+        "youtubeId": "VpkV6fWDxJg",
+        "title": "표고버섯 있으면 밥에 그냥 이렇게 비벼보세요",
+        "channel": "맛있는휴식(맛휴)",
+        "views": 1137036
+      },
+      {
+        "youtubeId": "_APZonXASl8",
+        "title": "고기보다 쫄깃하고 맛있는 다이어트 반찬! 초간단 영양만점 표고버섯볶음",
+        "channel": "램블부부 Ramble Couple",
+        "views": 939323
+      }
+    ],
+    "longs": [
+      {
+        "youtubeId": "u7Q4vRpmXYs",
+        "title": "이게 고기야 버섯이야?? 표고버섯보면 지나치지말고 '이 볶음' 만들어보세요. 눈과 입이 호강하는 요리랍니다❤️ [표고버섯볶음]",
+        "channel": "딸을 위한 레시피 Recipes for daughters",
+        "duration": "4:43",
+        "views": 684429
+      },
+      {
+        "youtubeId": "VBlSAHhBvU4",
+        "title": "표고버섯볶음 고기처럼 쫄깃쫄깃한 표고버섯볶음 만드는법, 표고버섯요리 / 표고버섯 손질법",
+        "channel": "엄마의집밥",
+        "duration": "3:08",
+        "views": 555465
+      },
+      {
+        "youtubeId": "ZCUZNWBwOt4",
+        "title": "EP195-생표고볶음)표고버섯으로 맛있는 한끼 반찬을!",
+        "channel": "이종임 스타일 채널",
+        "duration": "9:42",
+        "views": 331882
+      },
+      {
+        "youtubeId": "3slfetXSQwg",
+        "title": "!!3단 콤보!! ＜표고버섯＞ 고르기+손질+보관까지!",
+        "channel": "MBN Entertainment",
+        "duration": "3:41",
+        "views": 59013
+      },
+      {
+        "youtubeId": "KUq-Hn6Vi9E",
+        "title": "귀농일기 #49 표고버섯 보관 요령 │건표고 만들기│표고 알뜰하게 먹는법",
+        "channel": "신혼농부",
+        "duration": "5:26",
+        "views": 27526
+      }
+    ]
+  },
+  "mu": {
+    "shorts": [
+      {
+        "youtubeId": "462gCPfAR_Q",
+        "title": "이렇게 하시면 인정받는 '무생채' 알려드릴게요!",
+        "channel": "추추의 한끼식사",
+        "views": 8798525
+      },
+      {
+        "youtubeId": "XYBGDQtpbPU",
+        "title": "무생채 좋아하는 남편을 위한 북한아내의 간편 레시피 #shorts #무생채 #채지 #레시피 #윤설미",
+        "channel": "남북공동구역[윤설미TV]",
+        "views": 4615843
+      },
+      {
+        "youtubeId": "NLREnhlfS0I",
+        "title": "무나물 간은 ‘이렇게‘ 맞춰야 감칠맛 폭발‼️",
+        "channel": "비타민 밥상",
+        "views": 3397263
+      },
+      {
+        "youtubeId": "31Ju5fqCNbM",
+        "title": "무조건 3번 리필하는 무채장아찌",
+        "channel": "영칼로리 zero calories",
+        "views": 1444938
+      },
+      {
+        "youtubeId": "gF3JJztWL2g",
+        "title": "밥도둑 참치무조림",
+        "channel": "뚜비두밥 맛있는밥",
+        "views": 1214297
+      },
+      {
+        "youtubeId": "inSxaCM97uM",
+        "title": "냉장고 없이도 무를 가장 오래 보관하는 방법 #shortsvideo",
+        "channel": "스마트한농부",
+        "views": 1067240
+      }
+    ],
+    "longs": [
+      {
+        "youtubeId": "jNXwHjwSRwY",
+        "title": "소금으로 절이지마세요! 함바집 무생채 정말 쉽게 알려드려요~",
+        "channel": "요리왕비룡 셰프TV",
+        "duration": "8:24",
+        "views": 8732882
+      },
+      {
+        "youtubeId": "dXN1dlsYdJI",
+        "title": "가을 햇무가 좋은 시기입니다. 가을 무로 만드는 간단한 무생채와 맛있는 무생채 비빔밥입니다! ㅣ 백종원의 쿠킹로그",
+        "channel": "백종원 PAIK JONG WON",
+        "duration": "13:45",
+        "views": 6390955
+      },
+      {
+        "youtubeId": "2_gUtv5uw7s",
+        "title": "무나물. 특별한 스킬 필요없어요. 이영상대로 따라하면 나물고수 손맛이 나에게로 전수~ 딸도 대성공!!",
+        "channel": "[윤이련]50년 요리비결",
+        "duration": "6:04",
+        "views": 3142955
+      },
+      {
+        "youtubeId": "s9DXPk5nEJo",
+        "title": "겨울 무조림✔️○○○넣어야 입맛이 확!땡겨요🥇 식구들이 감탄합니다",
+        "channel": "딸을 위한 레시피 Recipes for daughters",
+        "duration": "5:12",
+        "views": 312517
+      },
+      {
+        "youtubeId": "AXBKBIo2y3g",
+        "title": "진짜 맛있는 식당 무생채 비법~ 절일 필요없이! 무조건 소금, 고춧가루는 이때 넣는게 비법✔︎",
+        "channel": "딸을 위한 레시피 Recipes for daughters",
+        "duration": "3:55",
+        "views": 396406
+      }
+    ]
+  },
+  "gul": {
+    "shorts": [
+      {
+        "youtubeId": "bMVLav-RaQY",
+        "title": "생각보다 쉬운 #생굴씻는법 🙌 #굴 #생굴 #굴씻는법 #생굴세척 #굴손질법 #shorts",
+        "channel": "땡큐파머스",
+        "views": 1428092
+      },
+      {
+        "youtubeId": "bh42Uszzd3c",
+        "title": "마트 생굴, 배탈 없이 안전하게 먹는 방법 #shorts",
+        "channel": "입질의추억TV jiminTV",
+        "views": 1602290
+      },
+      {
+        "youtubeId": "3z1GuJSS0o8",
+        "title": "SNS에서 난리 났었던, 10분 굴솥밥 (feat. 찬밥)",
+        "channel": "김진순 점심시간",
+        "views": 1059783
+      },
+      {
+        "youtubeId": "gzmCYPX4MgU",
+        "title": "류수영 한판굴전#류수영굴전 #sorts #편스토랑 #굴전",
+        "channel": "소소한 힐링 smallhealing",
+        "views": 424582
+      },
+      {
+        "youtubeId": "NrdgR9ECogw",
+        "title": "굴 세척법, 보관법, 해동법 이걸로 종결!",
+        "channel": "비마이홈",
+        "views": 281241
+      },
+      {
+        "youtubeId": "cFKCHp0JBzw",
+        "title": "[탱글 굴전 비법] 굴전 맛있게 부치는 방법, 딱 3가지 킥! (굴 씻는법)",
+        "channel": "애니애플냠냠",
+        "views": 62088
+      }
+    ],
+    "longs": [
+      {
+        "youtubeId": "rX_s8ZsVpfw",
+        "title": "입에 착착붙는 겨울 밥도둑!! 굴로 무조건 만들어보세요. 역대급 맛있는 [어리굴젓] (굴무침)",
+        "channel": "딸을 위한 레시피 Recipes for daughters",
+        "duration": "6:22",
+        "views": 1821579
+      },
+      {
+        "youtubeId": "AbvBSMkhZWA",
+        "title": "굴전 그냥 부치지 마세요. 꼭 ‘이렇게’ 만들어주세요 / 굴전 맛있게부치는법",
+        "channel": "첫째아들",
+        "duration": "5:10",
+        "views": 1212814
+      },
+      {
+        "youtubeId": "hfo-8Zwp0as",
+        "title": "'굴국' 깔끔하고 시원하게 끓이는 법 [엄마의손맛]",
+        "channel": "엄마의손맛",
+        "duration": "5:35",
+        "views": 1199896
+      },
+      {
+        "youtubeId": "g-N7E5_Js6s",
+        "title": "굴전| “NO 밀가루”  물컹 식감과 비린내 잡는법은 “00”을 사용하는 조리법에 있습니다 준티비 굴전, JUNTV OYSTER Gool-jeon",
+        "channel": "JUNTV",
+        "duration": "8:54",
+        "views": 1169915
+      },
+      {
+        "youtubeId": "EP4B9du7FM4",
+        "title": "굴 씻는법, 굴손질 함께 요리해요 | 영자씨의 부엌",
+        "channel": "영자씨의 부엌Young-Ja's Kitchen",
+        "duration": "3:13",
+        "views": 236655
+      }
+    ]
+  },
+  "bangeo": {
+    "shorts": [
+      {
+        "youtubeId": "iB58j3TQv1Q",
+        "title": "대방어를 진짜 맛있게 먹는 방법",
+        "channel": "마법소년 김셰프",
+        "views": 1950677
+      },
+      {
+        "youtubeId": "aP5L2qBe4dQ",
+        "title": "가장 맛있게 숙성하는 방어회 레시피! #코우지 #방어 #손선장",
+        "channel": "코우지 TV [더 상생]",
+        "views": 348826
+      },
+      {
+        "youtubeId": "0hw6L_LmIdA",
+        "title": "살살 녹는 새끼 방어 회뜨기 #shorts #방어 #sashimi",
+        "channel": "활사TV [Fish cutting & fishing]",
+        "views": 394517
+      },
+      {
+        "youtubeId": "GehfDIHChaA",
+        "title": "무조건 칭찬받는 방어 김치찌개 레시피",
+        "channel": "입질의추억TV jiminTV",
+        "views": 69676
+      },
+      {
+        "youtubeId": "7wz6GVHOHJk",
+        "title": "마트 방어가 너무 싸서 바로 스테이크! #shorts",
+        "channel": "간단아빠요리 Korean dad's simple cooking",
+        "views": 43232
+      },
+      {
+        "youtubeId": "57RqRY2jkOg",
+        "title": "방어조림❤️생선조림양념황금레시피💯한번알아두면유용한양념⭐️⭐️ #생선조림 #방어조림",
+        "channel": "광주엄마손맛",
+        "views": 22890
+      }
+    ],
+    "longs": [
+      {
+        "youtubeId": "Xv8NsqN-gcg",
+        "title": "아무도 몰랐던 방어손질법의 비밀! 고수의 노하우(풀영상)",
+        "channel": "일식조리기술원",
+        "duration": "19:04",
+        "views": 1256084
+      },
+      {
+        "youtubeId": "P9eAao1HfAM",
+        "title": "제철 맞은 방어회 4일 내내 먹는 방법(Feat. 숙성회 비법 공개)",
+        "channel": "성민식당",
+        "duration": "11:55",
+        "views": 150637
+      },
+      {
+        "youtubeId": "Xxie1iE-auU",
+        "title": "방어머리조림 [Braised head of Yellowtail] | 정호영의 오늘도 요리",
+        "channel": "정호영의 오늘도 요리 Kitchen Caden",
+        "duration": "6:38",
+        "views": 86751
+      },
+      {
+        "youtubeId": "Qy1rbWtvMmk",
+        "title": "방어회뜨기_회썰기편_ブリ_Yellowtail_나는갑수다",
+        "channel": "나는갑수다 Gapsu",
+        "duration": "3:25",
+        "views": 92918
+      },
+      {
+        "youtubeId": "PRa7BmZEvbE",
+        "title": "[#240] 부드럽고 담백한 '방어조림' 레시피 / Braised yellow tail ~!!!",
+        "channel": "반포할매 요리조리 I Cook-master",
+        "duration": "6:31",
+        "views": 28220
+      }
+    ]
+  },
+  "baechu": {
+    "shorts": [
+      {
+        "youtubeId": "FWZCUyhc_14",
+        "title": "모르면 안되는 알배추 꿀조합",
+        "channel": "하람키친HaramKitchen",
+        "views": 6359592
+      },
+      {
+        "youtubeId": "v_XOVUb3tWo",
+        "title": "임성근 셰프의  겉절이용 배추 자르는법#겉절이#배추#배추자르기#봄동 #임성근",
+        "channel": "임성근 임짱TV",
+        "views": 5424869
+      },
+      {
+        "youtubeId": "dqimqZ5Kmb8",
+        "title": "흑백요리사 여경래 셰프님의 배추맛이 기가막혀, 진짜 기가막힌 레시피",
+        "channel": "정남이쿡 l 혈당 잡는 저당 식탁",
+        "views": 3728982
+      },
+      {
+        "youtubeId": "ipdb22NfKwU",
+        "title": "초간단 12분 완성 #목란시그니처 #배추찜",
+        "channel": "여보어때",
+        "views": 3443945
+      },
+      {
+        "youtubeId": "Rjfzpzj3bug",
+        "title": "절대 모르면 안되는 알배추 레시피",
+        "channel": "1분다이어터 1mindiet",
+        "views": 3102375
+      },
+      {
+        "youtubeId": "SIH-Ete1cgU",
+        "title": "178만 조회수! 절이지 않고 만드는 초간단 겉절이 #kimchi #kfood #겉절이 #쉬운요리 #recipe #배추겉절이",
+        "channel": "목리집 박주부",
+        "views": 1819721
+      }
+    ],
+    "longs": [
+      {
+        "youtubeId": "K55CPyYTUJI",
+        "title": "김치 사 먹지 마세요! 복잡한 과정은 뺀 가장 쉬운 김장 비법",
+        "channel": "백종원 PAIK JONG WON",
+        "duration": "26:33",
+        "views": 6811993
+      },
+      {
+        "youtubeId": "E7dujyGmUi4",
+        "title": "(5분 뚝딱요리)대박 칼국수집 겉절이 이렇게? 만듭니다",
+        "channel": "유교수의 5분 뚝딱요리",
+        "duration": "5:44",
+        "views": 4702004
+      },
+      {
+        "youtubeId": "l-CJitLoM0A",
+        "title": "3대째 내려온 밥도둑 배추겉절이 레시피! '한가지' 과정만 추가하면 맛이 끝내줘요",
+        "channel": "리꼬 Rico",
+        "duration": "3:16",
+        "views": 3991279
+      },
+      {
+        "youtubeId": "4oRU-v5Niso",
+        "title": "배추로 무조건 해드세요! 드시는 분마다 200% 만족하는 [배추된장국]",
+        "channel": "딸을 위한 레시피 Recipes for daughters",
+        "duration": "4:35",
+        "views": 1604369
+      },
+      {
+        "youtubeId": "xgAA3yv8ZMs",
+        "title": "[이연복]  간단하지만 깊은 맛! 초간단 배추볶음!",
+        "channel": "이연복의 복주머니",
+        "duration": "7:09",
+        "views": 447779
+      }
+    ]
+  },
+  "sagwa": {
+    "shorts": [
+      {
+        "youtubeId": "Tu3nw27vI2Y",
+        "title": "한국인만 모르는 사과 100배 맛있게 먹는 법",
+        "channel": "지현쿡",
+        "views": 7057555
+      },
+      {
+        "youtubeId": "bfJKnJYzCnE",
+        "title": "사과에 계란을 넣었더니 고급진 브런치가 돼요",
+        "channel": "일등감의 쉬운 레시피",
+        "views": 3125346
+      },
+      {
+        "youtubeId": "VK0vFiKNC_c",
+        "title": "합법적으로 건강한 애플파이 먹는 방법",
+        "channel": "킴_과장",
+        "views": 2248498
+      },
+      {
+        "youtubeId": "whKGSfQPXe0",
+        "title": "이제 '사과' 이렇게드세요! 요즘 사과자르는법 !#shotrs",
+        "channel": "박정희의 우아한 라이프(pjh_elegantlife)",
+        "views": 1925593
+      },
+      {
+        "youtubeId": "kDd-qcFUM-k",
+        "title": "아침 대신 사과를 이렇게 드세요! 😋든든한데 살은 쏙 빠지는",
+        "channel": "루다 테이블 Luda Table",
+        "views": 1765137
+      },
+      {
+        "youtubeId": "90N_sGasjOw",
+        "title": "사과 보관법 총정리 🍎 | 사과 보관 방법, 사과 오래·장기 보관하는 법, 냉장고·김치냉장고·실온·냉동·깎은 사과·남은 사과 보관 꿀팁",
+        "channel": "한국의 맛과 멋",
+        "views": 1084738
+      }
+    ],
+    "longs": [
+      {
+        "youtubeId": "--m5TieGS6Y",
+        "title": "(#인기급상승동영상)밥통에 사과를 넣었더니 그립던 옛맛에 눈물이 납니다",
+        "channel": "주부나라",
+        "duration": "9:27",
+        "views": 4230952
+      },
+      {
+        "youtubeId": "lMIL6AnlMHY",
+        "title": "냉장고 속 묵은 사과는 버리지 말고 이렇게 드세요❗오래된 사과를 가장 맛있게 먹는 방법💯 사과 한 개의 영양이 그대로 들어가서 백설공주도 자다가 벌떡 일어납니다👍",
+        "channel": "묘식당 Rabbit's",
+        "duration": "3:06",
+        "views": 2472656
+      },
+      {
+        "youtubeId": "1vfJqpklDSI",
+        "title": "사과 농가를 응원합니다! 사과조림으로 만들 수 있는 무궁무진한 활용메뉴들을 확인해 보세요! ㅣ 백종원의 쿠킹로그",
+        "channel": "백종원 PAIK JONG WON",
+        "duration": "12:22",
+        "views": 1688609
+      },
+      {
+        "youtubeId": "VTLSUFVdzTY",
+        "title": "사과 보관방법 5가지 사과 저장방법",
+        "channel": "가을농원 사과TV",
+        "duration": "12:00",
+        "views": 548399
+      },
+      {
+        "youtubeId": "c24yyVa9njA",
+        "title": "[#집밥백선생] 맛없는 사과가 냉장고에 남아있다면?? 백종원의 빵도둑 '사과잼' 만들기 | EP20",
+        "channel": "tvN Joy",
+        "duration": "4:10",
+        "views": 532390
+      }
+    ]
+  },
+  "gwamegi": {
+    "shorts": [
+      {
+        "youtubeId": "_pCIV3B8ca0",
+        "title": "3일간 chill해야 하는 요리 과메기 #shorts",
+        "channel": "마법소년 김셰프",
+        "views": 2370317
+      },
+      {
+        "youtubeId": "e3DNbA5chRs",
+        "title": "과메기 꼭 이렇게 보관하세요!!",
+        "channel": "수부해TV subuhae",
+        "views": 263858
+      },
+      {
+        "youtubeId": "PS_5gyUwGEw",
+        "title": "포항 출신 남편이 알려주는 과메기 먹는 법",
+        "channel": "소녀 이짱돌",
+        "views": 252909
+      },
+      {
+        "youtubeId": "32fXcwMqQvA",
+        "title": "#과메기 초장보다 훨씬 맛있습니다‼️믿어주세요🙏 #과메기맛있게먹는법 #과메기요리 #과메기구이 #과메기참기름 #과메기들기름 #shorts",
+        "channel": "땡큐파머스",
+        "views": 127390
+      },
+      {
+        "youtubeId": "KruCGZbbHXQ",
+        "title": "추워질때 별미! 이 맛에 사는거지! 과메기 무침",
+        "channel": "만원요리 최씨남매",
+        "views": 68481
+      },
+      {
+        "youtubeId": "3Ab-tV9sA_o",
+        "title": "과메기 맛있게 먹는 방법 (비밀레시피)",
+        "channel": "영앤피쉬",
+        "views": 49735
+      }
+    ],
+    "longs": [
+      {
+        "youtubeId": "VOaff_vJO7E",
+        "title": "초보자도 과메기를 맛있게 먹는 법.. 이대로만 따라해보세요~!",
+        "channel": "입질의추억TV jiminTV",
+        "duration": "16:34",
+        "views": 386655
+      },
+      {
+        "youtubeId": "aV-94RguLAo",
+        "title": "과메기의 모든것! 이것만 숙지하세요. 먹는법, 보관법, 고르는법, 효능",
+        "channel": "백년밥상TV",
+        "duration": "4:35",
+        "views": 107601
+      },
+      {
+        "youtubeId": "q0-FV_DgklI",
+        "title": "백종원, 쉽게 만드는 과메기 반찬 비법 大공개!ㅣ맛남의 광장(A Palatial Residence)ㅣSBS ENTER.",
+        "channel": "SBS Entertainment",
+        "duration": "3:41",
+        "views": 96630
+      },
+      {
+        "youtubeId": "3hDA4FHcee8",
+        "title": "비린내 걱정 NO! 과메기 조림 수미쌤만 믿어! | 수미네 반찬  EP.81",
+        "channel": "tvN Joy",
+        "duration": "3:03",
+        "views": 45300
+      },
+      {
+        "youtubeId": "ay8Tay3bXoE",
+        "title": "냉동에 남아 있는 과메기로 조림하는 방법!!절대 비린내 나지 않고 쫄깃쫄깃 맛있습니다",
+        "channel": "엄마의뚝딱살림",
+        "duration": "4:12",
+        "views": 727
+      }
+    ]
+  },
+  "ueong": {
+    "shorts": [
+      {
+        "youtubeId": "iLLaab0NEpc",
+        "title": "향을 최대한 끌어올린 '우엉조림' 레시피 알려드릴게요!",
+        "channel": "추추의 한끼식사",
+        "views": 4356592
+      },
+      {
+        "youtubeId": "Eyer3yHBaTM",
+        "title": "윤기나는 '우엉조림' 이렇게 만들어요!",
+        "channel": "지구는 배고파",
+        "views": 2667037
+      },
+      {
+        "youtubeId": "UPrpxFKRo4A",
+        "title": "해도해도 간편한 우엉조림 #우엉조림 #밑반찬 #레시피",
+        "channel": "쿡톡 (빛 & 소금)",
+        "views": 2474726
+      },
+      {
+        "youtubeId": "zZiGYo6x1QQ",
+        "title": "정과처럼 쫀득쫀득한 우엉조림",
+        "channel": "로아",
+        "views": 2415950
+      },
+      {
+        "youtubeId": "-TikYx7_Fmg",
+        "title": "[⭐️100만⭐️] 쫀득하고 윤기나는 우엉조림 #shorts",
+        "channel": "1분요리왕 통키",
+        "views": 1271770
+      },
+      {
+        "youtubeId": "nf50tXKFAEA",
+        "title": "60초비법! 윤기나게 우엉채조림~",
+        "channel": "주부찬스 jubu_chance",
+        "views": 1203472
+      }
+    ],
+    "longs": [
+      {
+        "youtubeId": "o8deJYZeL9E",
+        "title": "[쫀득 우엉조림] 약재로 쓰이는 우엉. 아린맛 뺀다고 물에 담구지 마세요. 건강 밑반찬♥ 우엉조림 쫀득하고 윤기있게 만드는 법",
+        "channel": "[윤이련]50년 요리비결",
+        "duration": "6:11",
+        "views": 2502074
+      },
+      {
+        "youtubeId": "22HPD7pKfaE",
+        "title": "우엉조림. 부드러우면서도 아삭하게 조려보세요",
+        "channel": "쿡피아 Cookpia",
+        "duration": "9:47",
+        "views": 2167274
+      },
+      {
+        "youtubeId": "veDdwgDfPi4",
+        "title": "볶지마세요! 뚝딱 만드는 대박집 우엉조림 한번에 졸여 정말 너무 쉬워요!",
+        "channel": "요리왕비룡 셰프TV",
+        "duration": "8:20",
+        "views": 2128236
+      },
+      {
+        "youtubeId": "gTF1yDYebUw",
+        "title": "🥇반짝반짝~씹을수록 맛있는 [우엉조림]은 간장먼저 넣지 마세요✅ 우리가족 모두 행복해지는 반찬 !!",
+        "channel": "딸을 위한 레시피 Recipes for daughters",
+        "duration": "5:16",
+        "views": 1243781
+      },
+      {
+        "youtubeId": "H2_M23Dps-4",
+        "title": "갈변하지 않게!! 우엉손질법!",
+        "channel": "YoriTV",
+        "duration": "3:22",
+        "views": 35908
+      }
     ]
   }
 }
