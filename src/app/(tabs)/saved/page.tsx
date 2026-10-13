@@ -61,7 +61,7 @@ export default function SavedPage() {
               <li key={v.id}>
                 <div {...pressable(() => openPlayer(v))} className="-mx-2 flex cursor-pointer items-center gap-3.5 rounded-xl px-2 py-2.5 active:bg-fill">
                   <div className="relative size-24 shrink-0 overflow-hidden rounded-xl">
-                    <Thumb ingredientId={v.ingredientId} className="size-full" emojiSize={36} />
+                    <Thumb ingredientId={v.ingredientId} src={v.thumbnailUrl} className="size-full" emojiSize={36} />
                     <span className="absolute bottom-1.5 left-1.5 rounded bg-black/60 px-1.5 py-0.5 text-caption2 font-medium text-white">
                       {v.type === "shorts" ? "쇼츠" : "롱폼"}
                     </span>

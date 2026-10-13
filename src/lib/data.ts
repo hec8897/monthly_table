@@ -1,4 +1,5 @@
 import { z } from "zod";
+import curatedJson from "./videos.json";
 
 export const VideoSchema = z.object({
   id: z.string(),
@@ -122,10 +123,29 @@ const LONGS: [(n: string) => string, string][] = [
   [(n) => `신혼부부 주말 요리 | ${n} 듬뿍 넣은 한 그릇 요리`, "7:56"],
 ];
 
-// ponytail: generated mock videos; swap for a curated list / YouTube Data API. youtubeId null = no embed yet.
+// Curated real videos per ingredient (collected from YouTube). Validated since it's hand-collected external data.
+const CuratedSchema = z.record(
+  z.string(),
+  z.object({
+    shorts: z.array(z.object({ youtubeId: z.string().length(11), title: z.string(), channel: z.string() })),
+    longs: z.array(z.object({ youtubeId: z.string().length(11), title: z.string(), channel: z.string(), duration: z.string() })),
+  }),
+);
+const CURATED = CuratedSchema.parse(curatedJson);
+
+const thumb = (youtubeId: string) => `https://i.ytimg.com/vi/${youtubeId}/hqdefault.jpg`;
+
+// ponytail: ingredients without curated videos fall back to generated mocks (youtubeId null = no embed)
 export function getVideos(ingredientId: string): { shorts: Video[]; longs: Video[] } {
   const name = INGREDIENTS[ingredientId]?.name;
   if (!name) return { shorts: [], longs: [] };
+  const curated = CURATED[ingredientId];
+  if (curated) {
+    return {
+      shorts: curated.shorts.map((v) => ({ ...v, id: v.youtubeId, type: "shorts" as const, thumbnailUrl: thumb(v.youtubeId), ingredientId })),
+      longs: curated.longs.map((v) => ({ ...v, id: v.youtubeId, type: "long" as const, thumbnailUrl: thumb(v.youtubeId), ingredientId })),
+    };
+  }
   const base = { youtubeId: null, thumbnailUrl: null, ingredientId };
   return {
     shorts: SHORTS.map((title, i) => ({

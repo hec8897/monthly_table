@@ -22,12 +22,24 @@ export function pressable(onPress: () => void) {
 }
 
 /** Image placeholder: ingredient emoji on a striped fill. */
-export function Thumb({ ingredientId, className = "", emojiSize = 28 }: { ingredientId: string; className?: string; emojiSize?: number }) {
+export function Thumb({
+  ingredientId,
+  src,
+  className = "",
+  emojiSize = 28,
+}: {
+  ingredientId: string;
+  src?: string | null;
+  className?: string;
+  emojiSize?: number;
+}) {
   return (
-    <div className={`stripes flex items-center justify-center overflow-hidden ${className}`}>
+    <div className={`stripes grid place-items-center overflow-hidden *:[grid-area:1/1] ${className}`}>
       <span style={{ fontSize: emojiSize }} aria-hidden>
         {INGREDIENTS[ingredientId]?.emoji}
       </span>
+      {/* eslint-disable-next-line @next/next/no-img-element -- remote YouTube thumbnails, no optimization needed for the prototype */}
+      {src && <img src={src} alt="" loading="lazy" className="size-full object-cover" />}
     </div>
   );
 }
@@ -124,7 +136,7 @@ export function ShortsCard({ video, variant }: { video: Video; variant: "carouse
       {...pressable(() => openPlayer(video))}
       className={`relative aspect-9/16 cursor-pointer overflow-hidden rounded-xl ${variant === "carousel" ? "w-[132px] shrink-0" : ""}`}
     >
-      <Thumb ingredientId={video.ingredientId} className="absolute inset-0" emojiSize={40} />
+      <Thumb ingredientId={video.ingredientId} src={video.thumbnailUrl} className="absolute inset-0" emojiSize={40} />
       <div className="absolute inset-x-0 bottom-0 bg-linear-to-b from-transparent to-black/60 px-2.5 pt-10 pb-2.5">
         <p
           className={`line-clamp-2 font-semibold text-white ${variant === "carousel" ? "text-[13px] leading-[18px]" : "text-label1"}`}
@@ -144,7 +156,7 @@ export function LongRow({ video }: { video: Video }) {
   return (
     <div {...pressable(() => openPlayer(video))} className="-mx-2 flex cursor-pointer items-start gap-3 rounded-xl p-2 active:bg-fill">
       <div className="relative aspect-video w-36 shrink-0 overflow-hidden rounded-[10px]">
-        <Thumb ingredientId={video.ingredientId} className="size-full" />
+        <Thumb ingredientId={video.ingredientId} src={video.thumbnailUrl} className="size-full" />
         <DurationBadge duration={video.duration} />
       </div>
       <div className="flex min-w-0 flex-1 flex-col gap-1">
@@ -163,7 +175,7 @@ export function LongCard({ video }: { video: Video }) {
   return (
     <div {...pressable(() => openPlayer(video))} className="flex cursor-pointer flex-col gap-3">
       <div className="relative aspect-video overflow-hidden rounded-xl">
-        <Thumb ingredientId={video.ingredientId} className="size-full" emojiSize={48} />
+        <Thumb ingredientId={video.ingredientId} src={video.thumbnailUrl} className="size-full" emojiSize={48} />
         <DurationBadge duration={video.duration} size="md" />
       </div>
       <div className="flex items-start gap-2">
