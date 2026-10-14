@@ -1,10 +1,17 @@
 import type { Metadata, Viewport } from "next";
 import { Overlays } from "@/components/Overlays";
+import { SITE_NAME, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
+const description = "지금 가장 맛있는 제철 재료 8가지와 바로 따라 할 수 있는 레시피 영상을 매달 모아드려요.";
+
 export const metadata: Metadata = {
-  title: "제철밥상",
-  description: "이번 달 제철 재료 8가지와 레시피 영상",
+  metadataBase: new URL(SITE_URL),
+  title: { default: `${SITE_NAME} · 이번 달 제철 재료 레시피`, template: `%s | ${SITE_NAME}` },
+  description,
+  applicationName: SITE_NAME,
+  openGraph: { siteName: SITE_NAME, locale: "ko_KR", type: "website", description },
+  twitter: { card: "summary_large_image" },
 };
 
 export const viewport: Viewport = {

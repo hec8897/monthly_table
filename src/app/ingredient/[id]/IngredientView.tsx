@@ -6,7 +6,7 @@ import { useIngredient } from "@/lib/useIngredient";
 
 const LONG_PREVIEW = 3;
 
-export default function IngredientPage() {
+export default function IngredientView() {
   const { ingredient: ing, shorts, longs } = useIngredient();
 
   return (
