@@ -128,8 +128,8 @@ const LONGS: [(n: string) => string, string][] = [
 const CuratedSchema = z.record(
   z.string(),
   z.object({
-    shorts: z.array(z.object({ youtubeId: z.string().length(11), title: z.string(), channel: z.string(), views: z.number() })),
-    longs: z.array(z.object({ youtubeId: z.string().length(11), title: z.string(), channel: z.string(), duration: z.string(), views: z.number() })),
+    shorts: z.array(z.object({ youtubeId: z.string().length(11), title: z.string(), channel: z.string(), views: z.number().optional() })),
+    longs: z.array(z.object({ youtubeId: z.string().length(11), title: z.string(), channel: z.string(), duration: z.string(), views: z.number().optional() })),
   }),
 );
 const CURATED = CuratedSchema.parse(curatedJson);
